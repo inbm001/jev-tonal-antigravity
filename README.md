@@ -12,6 +12,9 @@
   - `.claude/skills/jev-rag-grounding/SKILL.md` 및 `.agents/skills/jev-rag-grounding/SKILL.md` 내장
 - **사이트 내 AI 화성학 채팅 & 실시간 토큰 사용량 모니터**
 
+## 상세 화성학 및 추천 알고리즘 문서
+- **[📘 코드 추천 근거 및 화성학 가이드 (docs/HARMONY_RECOMMENDATION_GUIDE.md)](./docs/HARMONY_RECOMMENDATION_GUIDE.md)**: 4단계 추천 파이프라인, 3중 앙상블 확률 공식($50\% \text{ Jev} + 30\% \text{ Tonal} + 20\% \text{ Corpus}$), 16종 화성 전이 규칙, 그리고 실제 4마디 생성 예시가 정리되어 있습니다.
+
 ## 실행 방법
 ```bash
 npm install
