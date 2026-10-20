@@ -1,5 +1,6 @@
 import { Chord, Interval, Key, Note, Progression } from "tonal";
 import neoSoulCorpusRaw from "./neoSoulCorpus.json";
+import lofiCorpusRaw from "./lofiCorpus.json";
 
 export type KeyMode = "major" | "minor";
 export type HarmonicCategory =
@@ -103,6 +104,25 @@ const neoSoulCorpus = neoSoulCorpusRaw as {
   transitions2GramByFamily?: Record<KeyMode, Record<string, CorpusEntry[]>>;
   transitions2Gram: Record<KeyMode, Record<string, CorpusEntry[]>>;
   transitions3Gram: Record<KeyMode, Record<string, CorpusEntry[]>>;
+};
+
+interface LofiCorpusTransitionItem {
+  relPc: number;
+  qual: string;
+  family?: QualityFamily;
+  lofiWeight: number;
+  jevScore?: number;
+  exampleLoop?: string;
+  songs: CorpusSongRef[];
+}
+
+const lofiCorpus = lofiCorpusRaw as {
+  meta: {
+    curatedMajorLoopsCount: number;
+    curatedMinorLoopsCount: number;
+  };
+  openings: Record<KeyMode, LofiCorpusTransitionItem[]>;
+  transitions2GramByFamily: Record<KeyMode, Record<string, LofiCorpusTransitionItem[]>>;
 };
 
 export const CORPUS_META = neoSoulCorpus.meta;
@@ -997,16 +1017,34 @@ function evaluateTransitionTheory(
 function lookupCorpusEntries(
   keyTonic: string,
   keyMode: KeyMode,
-  progression: ProgressionStep[]
+  progression: ProgressionStep[],
+  moodId?: string
 ): Map<string, CorpusEntry> {
   const keyPc = getChroma(keyTonic);
   const resultMap = new Map<string, CorpusEntry>();
+  const isLofiMode = moodId === "lofi-chill";
 
   if (progression.length === 0) {
+    if (isLofiMode) {
+      const lofiOpenings = lofiCorpus.openings?.[keyMode] || [];
+      for (const item of lofiOpenings) {
+        const fam = item.family || getQualityFamily(item.qual);
+        resultMap.set(`${item.relPc}:${fam}`, {
+          relPc: item.relPc,
+          qual: item.qual,
+          family: fam,
+          count: Math.max(4, Math.round(item.lofiWeight * 1.5)),
+          songs: item.songs,
+        });
+      }
+    }
     const list = neoSoulCorpus.openings[keyMode] || [];
     for (const item of list) {
       const fam = item.family || getQualityFamily(item.qual);
-      resultMap.set(`${item.relPc}:${fam}`, item);
+      const key = `${item.relPc}:${fam}`;
+      if (!resultMap.has(key)) {
+        resultMap.set(key, item);
+      }
     }
     return resultMap;
   }
@@ -1044,6 +1082,25 @@ function lookupCorpusEntries(
     }
   };
 
+  // 0) If in Lo-Fi Chill mode, prioritize Jev-curated Lo-Fi loop transitions
+  const familyKey = `${prevRelPc}:${prevFamily}`;
+  if (isLofiMode) {
+    const lofiTrans =
+      lofiCorpus.transitions2GramByFamily?.[keyMode]?.[familyKey] || [];
+    for (const item of lofiTrans) {
+      mergeEntry(
+        {
+          relPc: item.relPc,
+          qual: item.qual,
+          family: item.family || getQualityFamily(item.qual),
+          count: item.lofiWeight,
+          songs: item.songs,
+        },
+        2
+      );
+    }
+  }
+
   // 1) 3-gram context match
   if (progression.length >= 2) {
     const twoBack = progression[progression.length - 2];
@@ -1057,7 +1114,6 @@ function lookupCorpusEntries(
   }
 
   // 2) Strict 2-gram match by (prevRelPc:prevFamily)
-  const familyKey = `${prevRelPc}:${prevFamily}`;
   const list2Fam =
     neoSoulCorpus.transitions2GramByFamily?.[keyMode]?.[familyKey] ||
     neoSoulCorpus.transitions2Gram[keyMode]?.[String(prevRelPc)] ||
@@ -1190,7 +1246,7 @@ export function generateChordCandidates(params: {
   const nextBarIndex = progression.length;
   const keyPc = getChroma(keyTonic);
 
-  const corpusMap = lookupCorpusEntries(keyTonic, keyMode, progression);
+  const corpusMap = lookupCorpusEntries(keyTonic, keyMode, progression, mood.id);
 
   const rawList: Array<{
     symbol: string;

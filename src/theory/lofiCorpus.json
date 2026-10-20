@@ -1,0 +1,5516 @@
+{
+  "meta": {
+    "sourceRepo": "https://github.com/inbm001/progressions",
+    "curationMethod": "2-Stage Hybrid: Tonal.js Loop Rule Filter + Jev System One (score rubric 0..4)",
+    "totalSongsScanned": 673,
+    "total4BarWindowsScanned": 9567,
+    "candidatesEvaluatedByJev": 60,
+    "curatedMajorLoopsCount": 30,
+    "curatedMinorLoopsCount": 29,
+    "jevTokensUsed": {
+      "inputTokens": 29492,
+      "outputTokens": 964,
+      "totalTokens": 30456
+    }
+  },
+  "curatedLoops": {
+    "major": [
+      {
+        "sig": "2:MIN -> 7:DOM -> 0:MIN -> 5:DOM",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "13",
+            "family": "DOM",
+            "familyKey": "7:DOM"
+          },
+          {
+            "relPc": 0,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 5,
+            "qual": "13",
+            "family": "DOM",
+            "familyKey": "5:DOM"
+          }
+        ],
+        "exampleChords": [
+          "Dm11",
+          "G13",
+          "Cm11",
+          "F13"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "V13",
+          "im9",
+          "IV13"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 80,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "9CAxbr3NmoI",
+            "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+          }
+        ],
+        "jevScore": 3.2,
+        "jevLofiConfidence": 92,
+        "jevProbabilities": [
+          0,
+          0.02,
+          0.06,
+          0.61,
+          0.31
+        ],
+        "finalLofiScore": 82
+      },
+      {
+        "sig": "5:MAJ -> 3:MAJ -> 1:MAJ -> 0:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 3,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Fmaj7",
+          "Ebmaj7",
+          "Dbmaj7",
+          "Cmaj7"
+        ],
+        "romanNumerals": [
+          "IVmaj9",
+          "BIIImaj9",
+          "BIImaj9",
+          "Imaj9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 92,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on nostalgic IVmaj (Classic Lo-Fi Subdominant opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "AQXigfksP-I",
+            "title": "The Neptunes Star Trak “Website Background Music”"
+          }
+        ],
+        "jevScore": 3.19,
+        "jevLofiConfidence": 94,
+        "jevProbabilities": [
+          0.01,
+          0.02,
+          0.03,
+          0.64,
+          0.3
+        ],
+        "finalLofiScore": 86.7
+      },
+      {
+        "sig": "2:MIN -> 5:MAJ -> 10:MIN -> 9:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 10,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          },
+          {
+            "relPc": 9,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "Fmaj7",
+          "Bbm9",
+          "Am9"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "IVmaj9",
+          "bviim9",
+          "vim9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 88,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "JVR02jzAnJI",
+            "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+          }
+        ],
+        "jevScore": 2.98,
+        "jevLofiConfidence": 90,
+        "jevProbabilities": [
+          0.01,
+          0.03,
+          0.06,
+          0.77,
+          0.13
+        ],
+        "finalLofiScore": 81.9
+      },
+      {
+        "sig": "11:SUS -> 4:SUS -> 5:SUS -> 10:SUS",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 11,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "11:SUS"
+          },
+          {
+            "relPc": 4,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "4:SUS"
+          },
+          {
+            "relPc": 5,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "5:SUS"
+          },
+          {
+            "relPc": 10,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "10:SUS"
+          }
+        ],
+        "exampleChords": [
+          "B9sus4",
+          "E9sus4",
+          "F9sus4",
+          "Bb9sus4"
+        ],
+        "romanNumerals": [
+          "VII9sus4",
+          "III9sus4",
+          "IV9sus4",
+          "BVII9sus4"
+        ],
+        "totalOccurrences": 5,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 5,
+        "rulePreScore": 80,
+        "traits": [
+          "Repeated 5x as an actual loop in song",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "PhaFfpMl6JY",
+            "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+          }
+        ],
+        "jevScore": 2.96,
+        "jevLofiConfidence": 85,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.1,
+          0.66,
+          0.19
+        ],
+        "finalLofiScore": 78.4
+      },
+      {
+        "sig": "5:MAJ -> 7:MAJ -> 0:MAJ -> 2:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "7:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 2,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          }
+        ],
+        "exampleChords": [
+          "F69",
+          "G69",
+          "Cmaj7",
+          "Dm9"
+        ],
+        "romanNumerals": [
+          "IVmaj9",
+          "Vmaj9",
+          "Imaj9",
+          "iim9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 84,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on nostalgic IVmaj (Classic Lo-Fi Subdominant opening)",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "bZGBrwaJPGs",
+            "title": "The Isley Brothers “Between The Sheets”"
+          }
+        ],
+        "jevScore": 2.92,
+        "jevLofiConfidence": 90,
+        "jevProbabilities": [
+          0,
+          0.03,
+          0.07,
+          0.84,
+          0.06
+        ],
+        "finalLofiScore": 79.4
+      },
+      {
+        "sig": "5:MAJ -> 7:MAJ -> 5:MAJ -> 3:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "7:MAJ"
+          },
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 3,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Fmaj7",
+          "Gmaj7",
+          "Fmaj7",
+          "Ebmaj7"
+        ],
+        "romanNumerals": [
+          "IVmaj9",
+          "Vmaj9",
+          "IVmaj9",
+          "BIIImaj9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 88,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on nostalgic IVmaj (Classic Lo-Fi Subdominant opening)",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "AQXigfksP-I",
+            "title": "The Neptunes Star Trak “Website Background Music”"
+          }
+        ],
+        "jevScore": 2.91,
+        "jevLofiConfidence": 86,
+        "jevProbabilities": [
+          0.01,
+          0.03,
+          0.1,
+          0.78,
+          0.08
+        ],
+        "finalLofiScore": 80.9
+      },
+      {
+        "sig": "2:MIN -> 9:MIN -> 0:MIN -> 7:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 9,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Dm7",
+          "Am9",
+          "Cm9",
+          "Gm9"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "vim9",
+          "im9",
+          "vm9"
+        ],
+        "totalOccurrences": 6,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 65,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)"
+        ],
+        "songs": [
+          {
+            "id": "4rCtIE4i314",
+            "title": "Jamiroquai “Alright”"
+          },
+          {
+            "id": "OpqMOfHxEWI",
+            "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+          }
+        ],
+        "jevScore": 2.91,
+        "jevLofiConfidence": 85,
+        "jevProbabilities": [
+          0,
+          0.04,
+          0.11,
+          0.74,
+          0.11
+        ],
+        "finalLofiScore": 73.7
+      },
+      {
+        "sig": "9:MIN -> 0:MIN -> 7:MIN -> 2:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 9,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          },
+          {
+            "relPc": 2,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "Cm9",
+          "Gm9",
+          "Dm9"
+        ],
+        "romanNumerals": [
+          "vim9",
+          "im9",
+          "vm9",
+          "iim9"
+        ],
+        "totalOccurrences": 6,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 65,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on melancholic vim9"
+        ],
+        "songs": [
+          {
+            "id": "4rCtIE4i314",
+            "title": "Jamiroquai “Alright”"
+          },
+          {
+            "id": "OpqMOfHxEWI",
+            "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+          }
+        ],
+        "jevScore": 2.91,
+        "jevLofiConfidence": 83,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.12,
+          0.7,
+          0.13
+        ],
+        "finalLofiScore": 73.7
+      },
+      {
+        "sig": "9:MIN -> 7:SUS -> 0:MIN -> 11:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 9,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 0,
+            "qual": "m6",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 11,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "11:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "G9sus4",
+          "Cm6",
+          "Bm7"
+        ],
+        "romanNumerals": [
+          "vim9",
+          "V9sus4",
+          "im9",
+          "viim9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 81,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on melancholic vim9",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "DIFlUtsNXRY",
+            "title": "Mndsgn “Camelblues”"
+          }
+        ],
+        "jevScore": 2.86,
+        "jevLofiConfidence": 85,
+        "jevProbabilities": [
+          0,
+          0.03,
+          0.12,
+          0.81,
+          0.04
+        ],
+        "finalLofiScore": 77.3
+      },
+      {
+        "sig": "9:MIN -> 0:MAJ -> 4:SUS -> 10:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 9,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 4,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "4:SUS"
+          },
+          {
+            "relPc": 10,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "10:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Am7",
+          "Cmaj7",
+          "E9sus4",
+          "Bbmaj7"
+        ],
+        "romanNumerals": [
+          "vim9",
+          "Imaj9",
+          "III9sus4",
+          "BVIImaj9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 80,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on melancholic vim9",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)"
+        ],
+        "songs": [
+          {
+            "id": "hDQibtYTXuk",
+            "title": "Roland Garros 2005 Smash Court Tennis “Opening”"
+          }
+        ],
+        "jevScore": 2.85,
+        "jevLofiConfidence": 84,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.11,
+          0.79,
+          0.05
+        ],
+        "finalLofiScore": 76.8
+      },
+      {
+        "sig": "2:MIN -> 7:SUS -> 0:MAJ -> 9:DOM",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 9,
+            "qual": "9",
+            "family": "DOM",
+            "familyKey": "9:DOM"
+          }
+        ],
+        "exampleChords": [
+          "Dm7",
+          "G9sus4",
+          "Cmaj9",
+          "A9"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "V9sus4",
+          "Imaj9",
+          "VI13"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 78,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "x9XIYQdgK4I",
+            "title": "Snoop Dogg Ft. Brandy & Pharrell “Special”"
+          }
+        ],
+        "jevScore": 2.83,
+        "jevLofiConfidence": 86,
+        "jevProbabilities": [
+          0,
+          0.05,
+          0.09,
+          0.83,
+          0.03
+        ],
+        "finalLofiScore": 75.7
+      },
+      {
+        "sig": "2:MIN -> 7:MIN -> 0:MAJ -> 0:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Dm11",
+          "Gm9",
+          "Cmaj7",
+          "Cmaj9"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "vm9",
+          "Imaj9",
+          "Imaj9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 84,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "DXWZ3A0UHhc",
+            "title": "Kendrick Lamar “Untitled 06.30.2014”"
+          }
+        ],
+        "jevScore": 2.81,
+        "jevLofiConfidence": 81,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.14,
+          0.76,
+          0.05
+        ],
+        "finalLofiScore": 77.8
+      },
+      {
+        "sig": "2:MIN -> 5:MAJ -> 0:MAJ -> 0:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 5,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Dm7",
+          "Fmaj9",
+          "Cmaj7",
+          "Cmaj9"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "IVmaj9",
+          "Imaj9",
+          "Imaj9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 79,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Stepwise whole-tone turnaround back to Bar 1"
+        ],
+        "songs": [
+          {
+            "id": "SZC5XFpXguc",
+            "title": "Weirdest"
+          }
+        ],
+        "jevScore": 2.8,
+        "jevLofiConfidence": 80,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.15,
+          0.77,
+          0.03
+        ],
+        "finalLofiScore": 75.6
+      },
+      {
+        "sig": "7:MIN -> 0:MAJ -> 0:MAJ -> 2:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 2,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Gm9",
+          "Cmaj7",
+          "Cmaj9",
+          "Dm11"
+        ],
+        "romanNumerals": [
+          "vm9",
+          "Imaj9",
+          "Imaj9",
+          "iim9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 78,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "DXWZ3A0UHhc",
+            "title": "Kendrick Lamar “Untitled 06.30.2014”"
+          }
+        ],
+        "jevScore": 2.77,
+        "jevLofiConfidence": 80,
+        "jevProbabilities": [
+          0.01,
+          0.05,
+          0.14,
+          0.76,
+          0.04
+        ],
+        "finalLofiScore": 74.8
+      },
+      {
+        "sig": "5:MAJ -> 10:MIN -> 9:MIN -> 0:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 10,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          },
+          {
+            "relPc": 9,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "9:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Fmaj7",
+          "Bbm9",
+          "Am9",
+          "Cm9"
+        ],
+        "romanNumerals": [
+          "IVmaj9",
+          "bviim9",
+          "vim9",
+          "im9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 90,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on nostalgic IVmaj (Classic Lo-Fi Subdominant opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "JVR02jzAnJI",
+            "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+          }
+        ],
+        "jevScore": 2.76,
+        "jevLofiConfidence": 81,
+        "jevProbabilities": [
+          0.02,
+          0.08,
+          0.09,
+          0.72,
+          0.09
+        ],
+        "finalLofiScore": 79.4
+      },
+      {
+        "sig": "0:MAJ -> 0:MAJ -> 2:MIN -> 7:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 2,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Cmaj7",
+          "Cmaj9",
+          "Dm11",
+          "Gm9"
+        ],
+        "romanNumerals": [
+          "Imaj9",
+          "Imaj9",
+          "iim9",
+          "vm9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 86,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on Imaj",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "DXWZ3A0UHhc",
+            "title": "Kendrick Lamar “Untitled 06.30.2014”"
+          }
+        ],
+        "jevScore": 2.73,
+        "jevLofiConfidence": 77,
+        "jevProbabilities": [
+          0.01,
+          0.07,
+          0.15,
+          0.73,
+          0.04
+        ],
+        "finalLofiScore": 77.3
+      },
+      {
+        "sig": "2:MIN -> 0:SUS -> 5:MAJ -> 7:SUS",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "0:SUS"
+          },
+          {
+            "relPc": 5,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Dm7",
+          "C9sus4",
+          "Fmaj7",
+          "G9sus4"
+        ],
+        "romanNumerals": [
+          "iim9",
+          "I9sus4",
+          "IVmaj9",
+          "V9sus4"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 77,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on warm iim9 (Jazz-Hop Dorian/ii-V opening)",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "crUuGUL2wag",
+            "title": "Diane Tell “Tes Yeux” Intro"
+          }
+        ],
+        "jevScore": 2.72,
+        "jevLofiConfidence": 74,
+        "jevProbabilities": [
+          0.01,
+          0.06,
+          0.19,
+          0.7,
+          0.04
+        ],
+        "finalLofiScore": 73.6
+      },
+      {
+        "sig": "11:DOM -> 4:MIN -> 2:MIN -> 0:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 11,
+            "qual": "7#9#5",
+            "family": "DOM",
+            "familyKey": "11:DOM"
+          },
+          {
+            "relPc": 4,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "4:MIN"
+          },
+          {
+            "relPc": 2,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "B7#9#5",
+          "Em11",
+          "Dm11",
+          "Cmaj9"
+        ],
+        "romanNumerals": [
+          "VII13",
+          "iiim9",
+          "iim9",
+          "Imaj9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 77,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "8ErWu6HtM6c",
+            "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+          }
+        ],
+        "jevScore": 2.7,
+        "jevLofiConfidence": 74,
+        "jevProbabilities": [
+          0.02,
+          0.1,
+          0.14,
+          0.65,
+          0.09
+        ],
+        "finalLofiScore": 73.3
+      },
+      {
+        "sig": "0:MAJ -> 2:MAJ -> 4:MAJ -> 11:MIN",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 2,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "2:MAJ"
+          },
+          {
+            "relPc": 4,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "4:MAJ"
+          },
+          {
+            "relPc": 11,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "11:MIN"
+          }
+        ],
+        "exampleChords": [
+          "C69",
+          "D69",
+          "E69",
+          "Bm7"
+        ],
+        "romanNumerals": [
+          "Imaj9",
+          "IImaj9",
+          "IIImaj9",
+          "viim9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 85,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on Imaj",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "lWRSp0iKSks",
+            "title": "Usher Ft Pharrell “Certified”"
+          }
+        ],
+        "jevScore": 2.66,
+        "jevLofiConfidence": 72,
+        "jevProbabilities": [
+          0.01,
+          0.08,
+          0.19,
+          0.66,
+          0.06
+        ],
+        "finalLofiScore": 75.9
+      },
+      {
+        "sig": "5:MAJ -> 7:SUS -> 9:MAJ -> 0:MAJ",
+        "mode": "major",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "add9",
+            "family": "MAJ",
+            "familyKey": "5:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 9,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "9:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Fadd9",
+          "G9sus4",
+          "Amaj9",
+          "Cmaj9"
+        ],
+        "romanNumerals": [
+          "IVmaj9",
+          "V9sus4",
+          "VImaj9",
+          "Imaj9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 92,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on nostalgic IVmaj (Classic Lo-Fi Subdominant opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "nwkXesb_5Ys",
+            "title": "Shanice “It’s For You”"
+          }
+        ],
+        "jevScore": 2.62,
+        "jevLofiConfidence": 71,
+        "jevProbabilities": [
+          0.01,
+          0.11,
+          0.17,
+          0.68,
+          0.03
+        ],
+        "finalLofiScore": 78.1
+      }
+    ],
+    "minor": [
+      {
+        "sig": "0:MIN -> 8:MIN -> 3:MAJ -> 1:MAJ",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 8,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "8:MIN"
+          },
+          {
+            "relPc": 3,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj13",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Am11",
+          "Fm7",
+          "C69",
+          "Bbmaj13"
+        ],
+        "romanNumerals": [
+          "im9",
+          "vim9",
+          "IIImaj9",
+          "BIImaj9"
+        ],
+        "totalOccurrences": 6,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 72,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on tonic im9",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)"
+        ],
+        "songs": [
+          {
+            "id": "fWa2tYPw9Bw",
+            "title": "Those"
+          },
+          {
+            "id": "RJyvObNX7Ds",
+            "title": "Bobby Hutcherson “Montara”"
+          }
+        ],
+        "jevScore": 3.31,
+        "jevLofiConfidence": 97,
+        "jevProbabilities": [
+          0,
+          0.01,
+          0.02,
+          0.61,
+          0.36
+        ],
+        "finalLofiScore": 82.4
+      },
+      {
+        "sig": "3:MAJ -> 1:MAJ -> 0:MIN -> 8:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 3,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj13",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 8,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "8:MIN"
+          }
+        ],
+        "exampleChords": [
+          "C69",
+          "Bbmaj13",
+          "Am11",
+          "Fm9"
+        ],
+        "romanNumerals": [
+          "IIImaj9",
+          "BIImaj9",
+          "im9",
+          "vim9"
+        ],
+        "totalOccurrences": 6,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 73,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm IIImaj (Relative Major color)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "fWa2tYPw9Bw",
+            "title": "Those"
+          },
+          {
+            "id": "RJyvObNX7Ds",
+            "title": "Bobby Hutcherson “Montara”"
+          }
+        ],
+        "jevScore": 3.23,
+        "jevLofiConfidence": 95,
+        "jevProbabilities": [
+          0,
+          0.01,
+          0.04,
+          0.64,
+          0.31
+        ],
+        "finalLofiScore": 81.7
+      },
+      {
+        "sig": "3:SUS -> 5:SUS -> 6:MAJ -> 4:MAJ",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 3,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "3:SUS"
+          },
+          {
+            "relPc": 5,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "5:SUS"
+          },
+          {
+            "relPc": 6,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "6:MAJ"
+          },
+          {
+            "relPc": 4,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "4:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "C9sus4",
+          "D9sus4",
+          "Ebmaj9",
+          "C#maj9"
+        ],
+        "romanNumerals": [
+          "III9sus4",
+          "IV9sus4",
+          "#IVmaj9",
+          "BIVmaj9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 82,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "1ZdPCmkU3nM",
+            "title": "Illa J “Sunflower” feat. Potatohead People"
+          }
+        ],
+        "jevScore": 3.2,
+        "jevLofiConfidence": 94,
+        "jevProbabilities": [
+          0.01,
+          0.01,
+          0.04,
+          0.65,
+          0.29
+        ],
+        "finalLofiScore": 82.8
+      },
+      {
+        "sig": "5:MIN -> 2:MIN -> 1:MAJ -> 0:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "Bm7",
+          "Bbmaj7",
+          "Am9"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "iim9",
+          "BIImaj9",
+          "im9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 95,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "LJyRtDGXrRM",
+            "title": "Lupe Fiasco “I'm Beamin”"
+          }
+        ],
+        "jevScore": 3.1,
+        "jevLofiConfidence": 93,
+        "jevProbabilities": [
+          0.01,
+          0.02,
+          0.04,
+          0.74,
+          0.19
+        ],
+        "finalLofiScore": 86.5
+      },
+      {
+        "sig": "5:MIN -> 7:SUS -> 10:SUS -> 0:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 10,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "10:SUS"
+          },
+          {
+            "relPc": 0,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "0:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "E9sus4",
+          "G9sus4",
+          "A9sus4"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "V9sus4",
+          "VII9sus4",
+          "I9sus4"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 90,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "wUtzKn3TIj0",
+            "title": "Gas-Lab x Paul Grant “Summer Drive”"
+          }
+        ],
+        "jevScore": 3.05,
+        "jevLofiConfidence": 94,
+        "jevProbabilities": [
+          0,
+          0.02,
+          0.04,
+          0.8,
+          0.14
+        ],
+        "finalLofiScore": 83.8
+      },
+      {
+        "sig": "5:MIN -> 3:MIN -> 1:MAJ -> 0:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 3,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "3:MIN"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "0:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Dm7",
+          "Cm9",
+          "Bbmaj9",
+          "A9sus4"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "iiim9",
+          "BIImaj9",
+          "I9sus4"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 85,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "qA2aVlpE05U",
+            "title": "RoBKTA ft. Tudd R4cin' “All Night”"
+          }
+        ],
+        "jevScore": 3.05,
+        "jevLofiConfidence": 96,
+        "jevProbabilities": [
+          0,
+          0.01,
+          0.03,
+          0.84,
+          0.12
+        ],
+        "finalLofiScore": 81.8
+      },
+      {
+        "sig": "0:MIN -> 5:SUS -> 6:SUS -> 8:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 5,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "5:SUS"
+          },
+          {
+            "relPc": 6,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "6:SUS"
+          },
+          {
+            "relPc": 8,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "8:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "D9sus4",
+          "Eb9sus4",
+          "F9sus4"
+        ],
+        "romanNumerals": [
+          "im9",
+          "IV9sus4",
+          "#IV9sus4",
+          "VI9sus4"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 4,
+        "rulePreScore": 84,
+        "traits": [
+          "Repeated 4x as an actual loop in song",
+          "Starts on tonic im9",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "qjaC7omkKG4",
+            "title": "South Yokohama “Racing Lagoon”"
+          }
+        ],
+        "jevScore": 3,
+        "jevLofiConfidence": 85,
+        "jevProbabilities": [
+          0.01,
+          0.03,
+          0.11,
+          0.67,
+          0.18
+        ],
+        "finalLofiScore": 80.6
+      },
+      {
+        "sig": "0:MIN -> 5:MIN -> 2:MIN -> 1:MAJ",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 2,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "Dm9",
+          "Bm7",
+          "Bbmaj7"
+        ],
+        "romanNumerals": [
+          "im9",
+          "ivm9",
+          "iim9",
+          "BIImaj9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 87,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on tonic im9",
+          "Half-step turnaround (Chromatic/Tritone Sub slide back to Bar 1)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "LJyRtDGXrRM",
+            "title": "Lupe Fiasco “I'm Beamin”"
+          }
+        ],
+        "jevScore": 2.99,
+        "jevLofiConfidence": 92,
+        "jevProbabilities": [
+          0,
+          0.02,
+          0.06,
+          0.82,
+          0.1
+        ],
+        "finalLofiScore": 81.7
+      },
+      {
+        "sig": "5:MIN -> 10:MIN -> 7:MIN -> 0:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 10,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "Gm11",
+          "Em11",
+          "Am9"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "viim9",
+          "vm9",
+          "im9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 98,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "QiS3yNA9Jc0",
+            "title": "Jamiroquai ‘Where Do We Go From Here’"
+          }
+        ],
+        "jevScore": 2.93,
+        "jevLofiConfidence": 90,
+        "jevProbabilities": [
+          0,
+          0.04,
+          0.06,
+          0.82,
+          0.08
+        ],
+        "finalLofiScore": 84
+      },
+      {
+        "sig": "5:MIN -> 10:MIN -> 1:MIN -> 0:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 10,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          },
+          {
+            "relPc": 1,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "1:MIN"
+          },
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "Gm9",
+          "Bbm9",
+          "Am9"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "viim9",
+          "biim9",
+          "im9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 88,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "WbIPt8y2QNY",
+            "title": "Level 42 “Sirens”"
+          }
+        ],
+        "jevScore": 2.91,
+        "jevLofiConfidence": 89,
+        "jevProbabilities": [
+          0,
+          0.03,
+          0.08,
+          0.83,
+          0.06
+        ],
+        "finalLofiScore": 80.9
+      },
+      {
+        "sig": "7:SUS -> 0:MIN -> 10:SUS -> 9:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 0,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 10,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "10:SUS"
+          },
+          {
+            "relPc": 9,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "9:SUS"
+          }
+        ],
+        "exampleChords": [
+          "E9sus4",
+          "Am11",
+          "G9sus4",
+          "F#9sus4"
+        ],
+        "romanNumerals": [
+          "V9sus4",
+          "im9",
+          "VII9sus4",
+          "VI9sus4"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 76,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "c5lIzFDfPc4",
+            "title": "Patrice Rushen “Settle For My Love”"
+          },
+          {
+            "id": "yNbkz7nLVe8",
+            "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+          }
+        ],
+        "jevScore": 2.91,
+        "jevLofiConfidence": 87,
+        "jevProbabilities": [
+          0,
+          0.03,
+          0.1,
+          0.79,
+          0.08
+        ],
+        "finalLofiScore": 78.1
+      },
+      {
+        "sig": "8:MAJ -> 1:MAJ -> 11:DOM -> 10:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 8,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "8:MAJ"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 11,
+            "qual": "7#11",
+            "family": "DOM",
+            "familyKey": "11:DOM"
+          },
+          {
+            "relPc": 10,
+            "qual": "m7",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Fmaj7",
+          "Bbmaj7",
+          "G#7#11",
+          "Gm7"
+        ],
+        "romanNumerals": [
+          "VImaj9",
+          "BIImaj9",
+          "VII13",
+          "viim9"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 88,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on dreamy VImaj (Floating Minor Lo-Fi opening)",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "Mj1_C0McbNw",
+            "title": "Earth, Wind & Fire “Can’t Let Go”"
+          }
+        ],
+        "jevScore": 2.89,
+        "jevLofiConfidence": 84,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.11,
+          0.72,
+          0.12
+        ],
+        "finalLofiScore": 80.6
+      },
+      {
+        "sig": "3:MAJ -> 7:SUS -> 0:MAJ -> 10:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 3,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 10,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "10:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Cmaj9",
+          "E9sus4",
+          "Amaj9",
+          "G9sus4"
+        ],
+        "romanNumerals": [
+          "IIImaj9",
+          "V9sus4",
+          "Imaj9",
+          "VII9sus4"
+        ],
+        "totalOccurrences": 5,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 5,
+        "rulePreScore": 94,
+        "traits": [
+          "Repeated 5x as an actual loop in song",
+          "Starts on warm IIImaj (Relative Major color)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "5Lky5buDurk",
+            "title": "Title Tyler, The Creator & Roy Ayers “Find Your Wing"
+          }
+        ],
+        "jevScore": 2.84,
+        "jevLofiConfidence": 82,
+        "jevProbabilities": [
+          0.01,
+          0.05,
+          0.12,
+          0.74,
+          0.08
+        ],
+        "finalLofiScore": 82.2
+      },
+      {
+        "sig": "0:MIN -> 10:SUS -> 9:SUS -> 2:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m11",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 10,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "10:SUS"
+          },
+          {
+            "relPc": 9,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "9:SUS"
+          },
+          {
+            "relPc": 2,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "2:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Am11",
+          "G9sus4",
+          "F#9sus4",
+          "Bm9"
+        ],
+        "romanNumerals": [
+          "im9",
+          "VII9sus4",
+          "VI9sus4",
+          "iim9"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 88,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on tonic im9",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "c5lIzFDfPc4",
+            "title": "Patrice Rushen “Settle For My Love”"
+          },
+          {
+            "id": "yNbkz7nLVe8",
+            "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+          }
+        ],
+        "jevScore": 2.84,
+        "jevLofiConfidence": 82,
+        "jevProbabilities": [
+          0.01,
+          0.04,
+          0.13,
+          0.74,
+          0.08
+        ],
+        "finalLofiScore": 81.8
+      },
+      {
+        "sig": "8:MAJ -> 10:MAJ -> 0:MAJ -> 3:SUS",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 8,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "8:MAJ"
+          },
+          {
+            "relPc": 10,
+            "qual": "add9",
+            "family": "MAJ",
+            "familyKey": "10:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "add9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 3,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "3:SUS"
+          }
+        ],
+        "exampleChords": [
+          "Fmaj9",
+          "Gadd9",
+          "Aadd9",
+          "C9sus4"
+        ],
+        "romanNumerals": [
+          "VImaj9",
+          "VIImaj9",
+          "Imaj9",
+          "III9sus4"
+        ],
+        "totalOccurrences": 2,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 2,
+        "rulePreScore": 92,
+        "traits": [
+          "Repeated 2x loop in song",
+          "Starts on dreamy VImaj (Floating Minor Lo-Fi opening)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "U688UyqOLCQ",
+            "title": "Jorja Smith “Greatest Gift”"
+          }
+        ],
+        "jevScore": 2.78,
+        "jevLofiConfidence": 80,
+        "jevProbabilities": [
+          0.01,
+          0.05,
+          0.14,
+          0.76,
+          0.04
+        ],
+        "finalLofiScore": 80.5
+      },
+      {
+        "sig": "0:MIN -> 8:MAJ -> 5:MIN -> 7:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 8,
+            "qual": "69",
+            "family": "MAJ",
+            "familyKey": "8:MAJ"
+          },
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 7,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "7:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "F69",
+          "Dm9",
+          "Em9"
+        ],
+        "romanNumerals": [
+          "im9",
+          "VImaj9",
+          "ivm9",
+          "vm9"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 4,
+        "rulePreScore": 80,
+        "traits": [
+          "Repeated 4x as an actual loop in song",
+          "Starts on tonic im9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)"
+        ],
+        "songs": [
+          {
+            "id": "dvpPX_I_j0s",
+            "title": "Alicia Keys “Feeling U, Feeling Me” (Interlude)"
+          }
+        ],
+        "jevScore": 2.72,
+        "jevLofiConfidence": 77,
+        "jevProbabilities": [
+          0.01,
+          0.08,
+          0.14,
+          0.73,
+          0.04
+        ],
+        "finalLofiScore": 74.8
+      },
+      {
+        "sig": "3:MAJ -> 7:DOM -> 0:MAJ -> 5:MIN",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 3,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 7,
+            "qual": "7",
+            "family": "DOM",
+            "familyKey": "7:DOM"
+          },
+          {
+            "relPc": 0,
+            "qual": "maj9",
+            "family": "MAJ",
+            "familyKey": "0:MAJ"
+          },
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          }
+        ],
+        "exampleChords": [
+          "Cmaj9",
+          "E7",
+          "Amaj9",
+          "Dm9"
+        ],
+        "romanNumerals": [
+          "IIImaj9",
+          "V13",
+          "Imaj9",
+          "ivm9"
+        ],
+        "totalOccurrences": 3,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 85,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm IIImaj (Relative Major color)",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Contains Jazz ii-V / circle-of-fifths motion"
+        ],
+        "songs": [
+          {
+            "id": "XYQT6VERwcU",
+            "title": "This SWV “Use Your Heart”"
+          }
+        ],
+        "jevScore": 2.7,
+        "jevLofiConfidence": 76,
+        "jevProbabilities": [
+          0,
+          0.06,
+          0.18,
+          0.73,
+          0.03
+        ],
+        "finalLofiScore": 76.5
+      },
+      {
+        "sig": "5:MIN -> 2:DOM -> 1:MAJ -> 0:DOM",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 5,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "5:MIN"
+          },
+          {
+            "relPc": 2,
+            "qual": "7#11",
+            "family": "DOM",
+            "familyKey": "2:DOM"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 0,
+            "qual": "7#9#5",
+            "family": "DOM",
+            "familyKey": "0:DOM"
+          }
+        ],
+        "exampleChords": [
+          "Dm9",
+          "B7#11",
+          "Bbmaj7",
+          "A7#9#5"
+        ],
+        "romanNumerals": [
+          "ivm9",
+          "II13",
+          "BIImaj9",
+          "I13"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 4,
+        "rulePreScore": 90,
+        "traits": [
+          "Repeated 4x as an actual loop in song",
+          "Starts on melancholic ivm9",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "MJIkONKGdMg",
+            "title": "Jeff Lorber Fusion “Lava Lands”"
+          }
+        ],
+        "jevScore": 2.68,
+        "jevLofiConfidence": 73,
+        "jevProbabilities": [
+          0.01,
+          0.13,
+          0.13,
+          0.62,
+          0.11
+        ],
+        "finalLofiScore": 78.2
+      },
+      {
+        "sig": "0:MIN -> 10:MIN -> 1:MAJ -> 2:DOM",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 0,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "0:MIN"
+          },
+          {
+            "relPc": 10,
+            "qual": "m9",
+            "family": "MIN",
+            "familyKey": "10:MIN"
+          },
+          {
+            "relPc": 1,
+            "qual": "maj7",
+            "family": "MAJ",
+            "familyKey": "1:MAJ"
+          },
+          {
+            "relPc": 2,
+            "qual": "7#9",
+            "family": "DOM",
+            "familyKey": "2:DOM"
+          }
+        ],
+        "exampleChords": [
+          "Am9",
+          "Gm9",
+          "Bbmaj7",
+          "B7#9"
+        ],
+        "romanNumerals": [
+          "im9",
+          "viim9",
+          "BIImaj9",
+          "II13"
+        ],
+        "totalOccurrences": 4,
+        "songCount": 1,
+        "maxRepeatsInSingleSong": 4,
+        "rulePreScore": 83,
+        "traits": [
+          "Repeated 4x as an actual loop in song",
+          "Starts on tonic im9",
+          "Stepwise whole-tone turnaround back to Bar 1",
+          "Smooth stepwise Rhodes/Guitar planing motion"
+        ],
+        "songs": [
+          {
+            "id": "gZDBRUEFqKU",
+            "title": "Neo-Soul Secrets: Decoding The Internet's 'La Di Da'"
+          }
+        ],
+        "jevScore": 2.67,
+        "jevLofiConfidence": 73,
+        "jevProbabilities": [
+          0.01,
+          0.11,
+          0.15,
+          0.67,
+          0.06
+        ],
+        "finalLofiScore": 75.3
+      },
+      {
+        "sig": "3:MAJ -> 10:DOM -> 7:SUS -> 10:MAJ",
+        "mode": "minor",
+        "steps": [
+          {
+            "relPc": 3,
+            "qual": "add9",
+            "family": "MAJ",
+            "familyKey": "3:MAJ"
+          },
+          {
+            "relPc": 10,
+            "qual": "7",
+            "family": "DOM",
+            "familyKey": "10:DOM"
+          },
+          {
+            "relPc": 7,
+            "qual": "9sus4",
+            "family": "SUS",
+            "familyKey": "7:SUS"
+          },
+          {
+            "relPc": 10,
+            "qual": "add9",
+            "family": "MAJ",
+            "familyKey": "10:MAJ"
+          }
+        ],
+        "exampleChords": [
+          "Cadd9",
+          "G7",
+          "E9sus4",
+          "Gadd9"
+        ],
+        "romanNumerals": [
+          "IIImaj9",
+          "VII13",
+          "V9sus4",
+          "VIImaj9"
+        ],
+        "totalOccurrences": 6,
+        "songCount": 2,
+        "maxRepeatsInSingleSong": 3,
+        "rulePreScore": 79,
+        "traits": [
+          "Repeated 3x as an actual loop in song",
+          "Starts on warm IIImaj (Relative Major color)",
+          "Fifth-descent turnaround (Bar 4 -> Bar 1 resolves down a 5th)"
+        ],
+        "songs": [
+          {
+            "id": "CKkJ9Aafu0M",
+            "title": "D’Angelo “Lady”"
+          },
+          {
+            "id": "Pq2uJ6fNI7g",
+            "title": "D’Angelo “Lady”"
+          }
+        ],
+        "jevScore": 2.66,
+        "jevLofiConfidence": 72,
+        "jevProbabilities": [
+          0.01,
+          0.09,
+          0.18,
+          0.68,
+          0.04
+        ],
+        "finalLofiScore": 75.5
+      }
+    ]
+  },
+  "openings": {
+    "major": [
+      {
+        "relPc": 2,
+        "qual": "m11",
+        "family": "MIN",
+        "lofiWeight": 29,
+        "avgJevScore": 3.2,
+        "exampleLoop": "Dm11 -> G13 -> Cm11 -> F13",
+        "songs": [
+          {
+            "id": "9CAxbr3NmoI",
+            "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+          }
+        ]
+      },
+      {
+        "relPc": 5,
+        "qual": "maj7",
+        "family": "MAJ",
+        "lofiWeight": 19,
+        "avgJevScore": 3.19,
+        "exampleLoop": "Fmaj7 -> Ebmaj7 -> Dbmaj7 -> Cmaj7",
+        "songs": [
+          {
+            "id": "AQXigfksP-I",
+            "title": "The Neptunes Star Trak “Website Background Music”"
+          }
+        ]
+      },
+      {
+        "relPc": 0,
+        "qual": "maj7",
+        "family": "MAJ",
+        "lofiWeight": 18,
+        "avgJevScore": 2.73,
+        "exampleLoop": "Cmaj7 -> Cmaj9 -> Dm11 -> Gm9",
+        "songs": [
+          {
+            "id": "DXWZ3A0UHhc",
+            "title": "Kendrick Lamar “Untitled 06.30.2014”"
+          }
+        ]
+      },
+      {
+        "relPc": 9,
+        "qual": "m9",
+        "family": "MIN",
+        "lofiWeight": 12,
+        "avgJevScore": 2.91,
+        "exampleLoop": "Am9 -> Cm9 -> Gm9 -> Dm9",
+        "songs": [
+          {
+            "id": "4rCtIE4i314",
+            "title": "Jamiroquai “Alright”"
+          },
+          {
+            "id": "OpqMOfHxEWI",
+            "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+          }
+        ]
+      },
+      {
+        "relPc": 2,
+        "qual": "13",
+        "family": "DOM",
+        "lofiWeight": 5,
+        "avgJevScore": 2.6,
+        "exampleLoop": "D13 -> Gmaj9 -> C9sus4 -> Am9",
+        "songs": [
+          {
+            "id": "_12Rnn61T04",
+            "title": "Tyler’s “Boyfriend”"
+          },
+          {
+            "id": "yDlABN53h0s",
+            "title": "From Basic to Brilliant: How Tyler, The Creator, Com"
+          }
+        ]
+      },
+      {
+        "relPc": 11,
+        "qual": "9sus4",
+        "family": "SUS",
+        "lofiWeight": 3,
+        "avgJevScore": 2.96,
+        "exampleLoop": "B9sus4 -> E9sus4 -> F9sus4 -> Bb9sus4",
+        "songs": [
+          {
+            "id": "PhaFfpMl6JY",
+            "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+          }
+        ]
+      },
+      {
+        "relPc": 7,
+        "qual": "m9",
+        "family": "MIN",
+        "lofiWeight": 3,
+        "avgJevScore": 2.77,
+        "exampleLoop": "Gm9 -> Cmaj7 -> Cmaj9 -> Dm11",
+        "songs": [
+          {
+            "id": "DXWZ3A0UHhc",
+            "title": "Kendrick Lamar “Untitled 06.30.2014”"
+          }
+        ]
+      },
+      {
+        "relPc": 11,
+        "qual": "7#9#5",
+        "family": "DOM",
+        "lofiWeight": 3,
+        "avgJevScore": 2.7,
+        "exampleLoop": "B7#9#5 -> Em11 -> Dm11 -> Cmaj9",
+        "songs": [
+          {
+            "id": "8ErWu6HtM6c",
+            "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+          }
+        ]
+      },
+      {
+        "relPc": 5,
+        "qual": "9sus4",
+        "family": "SUS",
+        "lofiWeight": 3,
+        "avgJevScore": 2.58,
+        "exampleLoop": "F9sus4 -> Bbmaj7 -> G9sus4 -> Cmaj7",
+        "songs": [
+          {
+            "id": "IDGAVohlAIo",
+            "title": "Justin Timberlake “Take It From Here”"
+          }
+        ]
+      },
+      {
+        "relPc": 10,
+        "qual": "maj7",
+        "family": "MAJ",
+        "lofiWeight": 2,
+        "avgJevScore": 2.41,
+        "exampleLoop": "Bbmaj7 -> G9sus4 -> Cmaj7 -> F9sus4",
+        "songs": [
+          {
+            "id": "IDGAVohlAIo",
+            "title": "Justin Timberlake “Take It From Here”"
+          }
+        ]
+      }
+    ],
+    "minor": [
+      {
+        "relPc": 5,
+        "qual": "m9",
+        "family": "MIN",
+        "lofiWeight": 33,
+        "avgJevScore": 3.1,
+        "exampleLoop": "Dm9 -> Bm7 -> Bbmaj7 -> Am9",
+        "songs": [
+          {
+            "id": "LJyRtDGXrRM",
+            "title": "Lupe Fiasco “I'm Beamin”"
+          }
+        ]
+      },
+      {
+        "relPc": 0,
+        "qual": "m11",
+        "family": "MIN",
+        "lofiWeight": 25,
+        "avgJevScore": 3.31,
+        "exampleLoop": "Am11 -> Fm7 -> C69 -> Bbmaj13",
+        "songs": [
+          {
+            "id": "fWa2tYPw9Bw",
+            "title": "Those"
+          },
+          {
+            "id": "RJyvObNX7Ds",
+            "title": "Bobby Hutcherson “Montara”"
+          }
+        ]
+      },
+      {
+        "relPc": 3,
+        "qual": "69",
+        "family": "MAJ",
+        "lofiWeight": 17,
+        "avgJevScore": 3.23,
+        "exampleLoop": "C69 -> Bbmaj13 -> Am11 -> Fm9",
+        "songs": [
+          {
+            "id": "fWa2tYPw9Bw",
+            "title": "Those"
+          },
+          {
+            "id": "RJyvObNX7Ds",
+            "title": "Bobby Hutcherson “Montara”"
+          }
+        ]
+      },
+      {
+        "relPc": 8,
+        "qual": "maj7",
+        "family": "MAJ",
+        "lofiWeight": 16,
+        "avgJevScore": 2.89,
+        "exampleLoop": "Fmaj7 -> Bbmaj7 -> G#7#11 -> Gm7",
+        "songs": [
+          {
+            "id": "Mj1_C0McbNw",
+            "title": "Earth, Wind & Fire “Can’t Let Go”"
+          }
+        ]
+      },
+      {
+        "relPc": 5,
+        "qual": "9",
+        "family": "DOM",
+        "lofiWeight": 10,
+        "avgJevScore": 2.6,
+        "exampleLoop": "D9 -> Dm9 -> E7b9 -> Am9",
+        "songs": [
+          {
+            "id": "8-MJZ6i2NJs",
+            "title": "Jamiroquai “Spend A Lifetime”"
+          },
+          {
+            "id": "ap6Bh33D880",
+            "title": "Jamiroquai “Spend A Lifetime”"
+          },
+          {
+            "id": "dm29w-7C8dw",
+            "title": "Jamiroquai “Spend A Lifetime”"
+          }
+        ]
+      },
+      {
+        "relPc": 0,
+        "qual": "9sus4",
+        "family": "SUS",
+        "lofiWeight": 7,
+        "avgJevScore": 2.49,
+        "exampleLoop": "A9sus4 -> Dm7 -> Cmaj7 -> Bm7",
+        "songs": [
+          {
+            "id": "HWRnPM2O_Hc",
+            "title": "The Hardest Steely Dan Song? “Your Gold Teeth II”"
+          },
+          {
+            "id": "i9RJbHBscI0",
+            "title": "Steely Dan “Your Gold Teeth II”"
+          },
+          {
+            "id": "zvr3RvTfJ3Q",
+            "title": "This Intro Is Absolutely Nuts 🤯 ! Steely Dan “Your "
+          }
+        ]
+      },
+      {
+        "relPc": 7,
+        "qual": "9sus4",
+        "family": "SUS",
+        "lofiWeight": 6,
+        "avgJevScore": 2.91,
+        "exampleLoop": "E9sus4 -> Am11 -> G9sus4 -> F#9sus4",
+        "songs": [
+          {
+            "id": "c5lIzFDfPc4",
+            "title": "Patrice Rushen “Settle For My Love”"
+          },
+          {
+            "id": "yNbkz7nLVe8",
+            "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+          }
+        ]
+      },
+      {
+        "relPc": 3,
+        "qual": "9sus4",
+        "family": "SUS",
+        "lofiWeight": 3,
+        "avgJevScore": 3.2,
+        "exampleLoop": "C9sus4 -> D9sus4 -> Ebmaj9 -> C#maj9",
+        "songs": [
+          {
+            "id": "1ZdPCmkU3nM",
+            "title": "Illa J “Sunflower” feat. Potatohead People"
+          }
+        ]
+      }
+    ]
+  },
+  "transitions2GramByFamily": {
+    "major": {
+      "2:MIN": [
+        {
+          "relPc": 9,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 12,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm7 -> Am9 -> Cm9 -> Gm9",
+          "songs": [
+            {
+              "id": "4rCtIE4i314",
+              "title": "Jamiroquai “Alright”"
+            },
+            {
+              "id": "OpqMOfHxEWI",
+              "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 9,
+          "jevScore": 2.98,
+          "exampleLoop": "Dm9 -> Fmaj7 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "JVR02jzAnJI",
+              "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 9,
+          "jevScore": 2.81,
+          "exampleLoop": "Dm11 -> Gm9 -> Cmaj7 -> Cmaj9",
+          "songs": [
+            {
+              "id": "DXWZ3A0UHhc",
+              "title": "Kendrick Lamar “Untitled 06.30.2014”"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "13",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 3.2,
+          "exampleLoop": "Dm11 -> G13 -> Cm11 -> F13",
+          "songs": [
+            {
+              "id": "9CAxbr3NmoI",
+              "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.7,
+          "exampleLoop": "B7#9#5 -> Em11 -> Dm11 -> Cmaj9",
+          "songs": [
+            {
+              "id": "8ErWu6HtM6c",
+              "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.83,
+          "exampleLoop": "Dm7 -> G9sus4 -> Cmaj9 -> A9",
+          "songs": [
+            {
+              "id": "x9XIYQdgK4I",
+              "title": "Snoop Dogg Ft. Brandy & Pharrell “Special”"
+            }
+          ]
+        }
+      ],
+      "7:DOM": [
+        {
+          "relPc": 4,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "Dm7 -> G9 -> Em7 -> Am9",
+          "songs": [
+            {
+              "id": "0OftDAJ32Zg",
+              "title": "Paul McCartney “Wonderful Christmastime”"
+            },
+            {
+              "id": "bmLQjADGpm0",
+              "title": "Paul McCartney “Wonderful Christmastime”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "Dm11 -> G13 -> Cm11 -> F13",
+          "songs": [
+            {
+              "id": "9CAxbr3NmoI",
+              "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+            }
+          ]
+        }
+      ],
+      "0:MIN": [
+        {
+          "relPc": 7,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 12,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm7 -> Am9 -> Cm9 -> Gm9",
+          "songs": [
+            {
+              "id": "4rCtIE4i314",
+              "title": "Jamiroquai “Alright”"
+            },
+            {
+              "id": "OpqMOfHxEWI",
+              "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "13",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "Dm11 -> G13 -> Cm11 -> F13",
+          "songs": [
+            {
+              "id": "9CAxbr3NmoI",
+              "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+            }
+          ]
+        },
+        {
+          "relPc": 11,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.86,
+          "exampleLoop": "Am9 -> G9sus4 -> Cm6 -> Bm7",
+          "songs": [
+            {
+              "id": "DIFlUtsNXRY",
+              "title": "Mndsgn “Camelblues”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.76,
+          "exampleLoop": "Fmaj7 -> Bbm9 -> Am9 -> Cm9",
+          "songs": [
+            {
+              "id": "JVR02jzAnJI",
+              "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+            }
+          ]
+        }
+      ],
+      "5:DOM": [
+        {
+          "relPc": 2,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "Dm11 -> G13 -> Cm11 -> F13",
+          "songs": [
+            {
+              "id": "9CAxbr3NmoI",
+              "title": "J Dilla, Busta Rhymes & Q-Tip “Ill Vibe“ (The Ummah "
+            }
+          ]
+        }
+      ],
+      "5:MAJ": [
+        {
+          "relPc": 7,
+          "qual": "69",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.92,
+          "exampleLoop": "F69 -> G69 -> Cmaj7 -> Dm9",
+          "songs": [
+            {
+              "id": "bZGBrwaJPGs",
+              "title": "The Isley Brothers “Between The Sheets”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 3.19,
+          "exampleLoop": "Fmaj7 -> Ebmaj7 -> Dbmaj7 -> Cmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.98,
+          "exampleLoop": "Dm9 -> Fmaj7 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "JVR02jzAnJI",
+              "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.72,
+          "exampleLoop": "Dm7 -> C9sus4 -> Fmaj7 -> G9sus4",
+          "songs": [
+            {
+              "id": "crUuGUL2wag",
+              "title": "Diane Tell “Tes Yeux” Intro"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.8,
+          "exampleLoop": "Dm7 -> Fmaj9 -> Cmaj7 -> Cmaj9",
+          "songs": [
+            {
+              "id": "SZC5XFpXguc",
+              "title": "Weirdest"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "69",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 2,
+          "jevScore": 2.45,
+          "exampleLoop": "Fmaj7 -> F69 -> G69 -> Cmaj7",
+          "songs": [
+            {
+              "id": "bZGBrwaJPGs",
+              "title": "The Isley Brothers “Between The Sheets”"
+            }
+          ]
+        }
+      ],
+      "3:MAJ": [
+        {
+          "relPc": 1,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.19,
+          "exampleLoop": "Fmaj7 -> Ebmaj7 -> Dbmaj7 -> Cmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.91,
+          "exampleLoop": "Fmaj7 -> Gmaj7 -> Fmaj7 -> Ebmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        }
+      ],
+      "1:MAJ": [
+        {
+          "relPc": 0,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.19,
+          "exampleLoop": "Fmaj7 -> Ebmaj7 -> Dbmaj7 -> Cmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        }
+      ],
+      "0:MAJ": [
+        {
+          "relPc": 2,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 15,
+          "jevScore": 2.92,
+          "exampleLoop": "F69 -> G69 -> Cmaj7 -> Dm9",
+          "songs": [
+            {
+              "id": "bZGBrwaJPGs",
+              "title": "The Isley Brothers “Between The Sheets”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 12,
+          "jevScore": 2.81,
+          "exampleLoop": "Dm11 -> Gm9 -> Cmaj7 -> Cmaj9",
+          "songs": [
+            {
+              "id": "DXWZ3A0UHhc",
+              "title": "Kendrick Lamar “Untitled 06.30.2014”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": true,
+          "lofiWeight": 9,
+          "jevScore": 2.58,
+          "exampleLoop": "F9sus4 -> Bbmaj7 -> G9sus4 -> Cmaj7",
+          "songs": [
+            {
+              "id": "IDGAVohlAIo",
+              "title": "Justin Timberlake “Take It From Here”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 8,
+          "jevScore": 3.19,
+          "exampleLoop": "Fmaj7 -> Ebmaj7 -> Dbmaj7 -> Cmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        },
+        {
+          "relPc": 11,
+          "qual": "7#9#5",
+          "family": "DOM",
+          "isTurnaround": true,
+          "lofiWeight": 8,
+          "jevScore": 2.7,
+          "exampleLoop": "B7#9#5 -> Em11 -> Dm11 -> Cmaj9",
+          "songs": [
+            {
+              "id": "8ErWu6HtM6c",
+              "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+            }
+          ]
+        },
+        {
+          "relPc": 4,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.85,
+          "exampleLoop": "Am7 -> Cmaj7 -> E9sus4 -> Bbmaj7",
+          "songs": [
+            {
+              "id": "hDQibtYTXuk",
+              "title": "Roland Garros 2005 Smash Court Tennis “Opening”"
+            }
+          ]
+        }
+      ],
+      "10:MIN": [
+        {
+          "relPc": 9,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.98,
+          "exampleLoop": "Dm9 -> Fmaj7 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "JVR02jzAnJI",
+              "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+            }
+          ]
+        }
+      ],
+      "9:MIN": [
+        {
+          "relPc": 0,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 15,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm7 -> Am9 -> Cm9 -> Gm9",
+          "songs": [
+            {
+              "id": "4rCtIE4i314",
+              "title": "Jamiroquai “Alright”"
+            },
+            {
+              "id": "OpqMOfHxEWI",
+              "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 8,
+          "jevScore": 2.98,
+          "exampleLoop": "Dm9 -> Fmaj7 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "JVR02jzAnJI",
+              "title": "Akuma's Theme - “Killing Moon” – Street Fighter III "
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "13",
+          "family": "DOM",
+          "isTurnaround": true,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "D13 -> Gmaj9 -> C9sus4 -> Am9",
+          "songs": [
+            {
+              "id": "_12Rnn61T04",
+              "title": "Tyler’s “Boyfriend”"
+            },
+            {
+              "id": "yDlABN53h0s",
+              "title": "From Basic to Brilliant: How Tyler, The Creator, Com"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.86,
+          "exampleLoop": "Am9 -> G9sus4 -> Cm6 -> Bm7",
+          "songs": [
+            {
+              "id": "DIFlUtsNXRY",
+              "title": "Mndsgn “Camelblues”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.85,
+          "exampleLoop": "Am7 -> Cmaj7 -> E9sus4 -> Bbmaj7",
+          "songs": [
+            {
+              "id": "hDQibtYTXuk",
+              "title": "Roland Garros 2005 Smash Court Tennis “Opening”"
+            }
+          ]
+        }
+      ],
+      "11:SUS": [
+        {
+          "relPc": 4,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.96,
+          "exampleLoop": "B9sus4 -> E9sus4 -> F9sus4 -> Bb9sus4",
+          "songs": [
+            {
+              "id": "PhaFfpMl6JY",
+              "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+            }
+          ]
+        }
+      ],
+      "4:SUS": [
+        {
+          "relPc": 5,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.96,
+          "exampleLoop": "B9sus4 -> E9sus4 -> F9sus4 -> Bb9sus4",
+          "songs": [
+            {
+              "id": "PhaFfpMl6JY",
+              "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.85,
+          "exampleLoop": "Am7 -> Cmaj7 -> E9sus4 -> Bbmaj7",
+          "songs": [
+            {
+              "id": "hDQibtYTXuk",
+              "title": "Roland Garros 2005 Smash Court Tennis “Opening”"
+            }
+          ]
+        }
+      ],
+      "5:SUS": [
+        {
+          "relPc": 10,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 10,
+          "jevScore": 2.61,
+          "exampleLoop": "Cmaj9 -> Gb9sus4 -> F9sus4 -> Bbmaj9",
+          "songs": [
+            {
+              "id": "7hsA8wtHHC4",
+              "title": "Incognito “Love, Joy, Understanding” Intro"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.96,
+          "exampleLoop": "B9sus4 -> E9sus4 -> F9sus4 -> Bb9sus4",
+          "songs": [
+            {
+              "id": "PhaFfpMl6JY",
+              "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 2,
+          "jevScore": 2.35,
+          "exampleLoop": "F -> Cmaj7 -> F9sus4 -> G9sus4",
+          "songs": [
+            {
+              "id": "6Q6utfPu7Rk",
+              "title": "Michael Jackson P.Y.T. Greg Phillinganes Version"
+            }
+          ]
+        }
+      ],
+      "10:SUS": [
+        {
+          "relPc": 11,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.96,
+          "exampleLoop": "B9sus4 -> E9sus4 -> F9sus4 -> Bb9sus4",
+          "songs": [
+            {
+              "id": "PhaFfpMl6JY",
+              "title": "Ghost-Note Ft. Marcus Miller “Yellow Dan” Bridge"
+            }
+          ]
+        }
+      ],
+      "7:MAJ": [
+        {
+          "relPc": 0,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 7,
+          "jevScore": 2.92,
+          "exampleLoop": "F69 -> G69 -> Cmaj7 -> Dm9",
+          "songs": [
+            {
+              "id": "bZGBrwaJPGs",
+              "title": "The Isley Brothers “Between The Sheets”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "D13 -> Gmaj9 -> C9sus4 -> Am9",
+          "songs": [
+            {
+              "id": "_12Rnn61T04",
+              "title": "Tyler’s “Boyfriend”"
+            },
+            {
+              "id": "yDlABN53h0s",
+              "title": "From Basic to Brilliant: How Tyler, The Creator, Com"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.91,
+          "exampleLoop": "Fmaj7 -> Gmaj7 -> Fmaj7 -> Ebmaj7",
+          "songs": [
+            {
+              "id": "AQXigfksP-I",
+              "title": "The Neptunes Star Trak “Website Background Music”"
+            }
+          ]
+        }
+      ],
+      "7:MIN": [
+        {
+          "relPc": 2,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 12,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm7 -> Am9 -> Cm9 -> Gm9",
+          "songs": [
+            {
+              "id": "4rCtIE4i314",
+              "title": "Jamiroquai “Alright”"
+            },
+            {
+              "id": "OpqMOfHxEWI",
+              "title": "Chord Progression Breakdown: Jamiroquai's 'Alright' "
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 9,
+          "jevScore": 2.81,
+          "exampleLoop": "Dm11 -> Gm9 -> Cmaj7 -> Cmaj9",
+          "songs": [
+            {
+              "id": "DXWZ3A0UHhc",
+              "title": "Kendrick Lamar “Untitled 06.30.2014”"
+            }
+          ]
+        }
+      ],
+      "7:SUS": [
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 10,
+          "jevScore": 2.83,
+          "exampleLoop": "Dm7 -> G9sus4 -> Cmaj9 -> A9",
+          "songs": [
+            {
+              "id": "x9XIYQdgK4I",
+              "title": "Snoop Dogg Ft. Brandy & Pharrell “Special”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "m6",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.86,
+          "exampleLoop": "Am9 -> G9sus4 -> Cm6 -> Bm7",
+          "songs": [
+            {
+              "id": "DIFlUtsNXRY",
+              "title": "Mndsgn “Camelblues”"
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.72,
+          "exampleLoop": "Dm7 -> C9sus4 -> Fmaj7 -> G9sus4",
+          "songs": [
+            {
+              "id": "crUuGUL2wag",
+              "title": "Diane Tell “Tes Yeux” Intro"
+            }
+          ]
+        },
+        {
+          "relPc": 9,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.62,
+          "exampleLoop": "Fadd9 -> G9sus4 -> Amaj9 -> Cmaj9",
+          "songs": [
+            {
+              "id": "nwkXesb_5Ys",
+              "title": "Shanice “It’s For You”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 2,
+          "jevScore": 2.35,
+          "exampleLoop": "F -> Cmaj7 -> F9sus4 -> G9sus4",
+          "songs": [
+            {
+              "id": "6Q6utfPu7Rk",
+              "title": "Michael Jackson P.Y.T. Greg Phillinganes Version"
+            }
+          ]
+        }
+      ],
+      "11:MIN": [
+        {
+          "relPc": 9,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.86,
+          "exampleLoop": "Am9 -> G9sus4 -> Cm6 -> Bm7",
+          "songs": [
+            {
+              "id": "DIFlUtsNXRY",
+              "title": "Mndsgn “Camelblues”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "69",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.66,
+          "exampleLoop": "C69 -> D69 -> E69 -> Bm7",
+          "songs": [
+            {
+              "id": "lWRSp0iKSks",
+              "title": "Usher Ft Pharrell “Certified”"
+            }
+          ]
+        }
+      ],
+      "10:MAJ": [
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 7,
+          "jevScore": 2.58,
+          "exampleLoop": "F9sus4 -> Bbmaj7 -> G9sus4 -> Cmaj7",
+          "songs": [
+            {
+              "id": "IDGAVohlAIo",
+              "title": "Justin Timberlake “Take It From Here”"
+            }
+          ]
+        },
+        {
+          "relPc": 9,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.85,
+          "exampleLoop": "Am7 -> Cmaj7 -> E9sus4 -> Bbmaj7",
+          "songs": [
+            {
+              "id": "hDQibtYTXuk",
+              "title": "Roland Garros 2005 Smash Court Tennis “Opening”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.61,
+          "exampleLoop": "Cmaj9 -> Gb9sus4 -> F9sus4 -> Bbmaj9",
+          "songs": [
+            {
+              "id": "7hsA8wtHHC4",
+              "title": "Incognito “Love, Joy, Understanding” Intro"
+            }
+          ]
+        }
+      ],
+      "9:DOM": [
+        {
+          "relPc": 2,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.83,
+          "exampleLoop": "Dm7 -> G9sus4 -> Cmaj9 -> A9",
+          "songs": [
+            {
+              "id": "x9XIYQdgK4I",
+              "title": "Snoop Dogg Ft. Brandy & Pharrell “Special”"
+            }
+          ]
+        }
+      ],
+      "0:SUS": [
+        {
+          "relPc": 9,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "D13 -> Gmaj9 -> C9sus4 -> Am9",
+          "songs": [
+            {
+              "id": "_12Rnn61T04",
+              "title": "Tyler’s “Boyfriend”"
+            },
+            {
+              "id": "yDlABN53h0s",
+              "title": "From Basic to Brilliant: How Tyler, The Creator, Com"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.72,
+          "exampleLoop": "Dm7 -> C9sus4 -> Fmaj7 -> G9sus4",
+          "songs": [
+            {
+              "id": "crUuGUL2wag",
+              "title": "Diane Tell “Tes Yeux” Intro"
+            }
+          ]
+        }
+      ],
+      "11:DOM": [
+        {
+          "relPc": 4,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.7,
+          "exampleLoop": "B7#9#5 -> Em11 -> Dm11 -> Cmaj9",
+          "songs": [
+            {
+              "id": "8ErWu6HtM6c",
+              "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+            }
+          ]
+        }
+      ],
+      "4:MIN": [
+        {
+          "relPc": 2,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.7,
+          "exampleLoop": "B7#9#5 -> Em11 -> Dm11 -> Cmaj9",
+          "songs": [
+            {
+              "id": "8ErWu6HtM6c",
+              "title": "Before Timbaland & Missy… There Was DeVante Swing’s"
+            }
+          ]
+        },
+        {
+          "relPc": 9,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "Dm7 -> G9 -> Em7 -> Am9",
+          "songs": [
+            {
+              "id": "0OftDAJ32Zg",
+              "title": "Paul McCartney “Wonderful Christmastime”"
+            },
+            {
+              "id": "bmLQjADGpm0",
+              "title": "Paul McCartney “Wonderful Christmastime”"
+            }
+          ]
+        }
+      ],
+      "2:MAJ": [
+        {
+          "relPc": 4,
+          "qual": "69",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.66,
+          "exampleLoop": "C69 -> D69 -> E69 -> Bm7",
+          "songs": [
+            {
+              "id": "lWRSp0iKSks",
+              "title": "Usher Ft Pharrell “Certified”"
+            }
+          ]
+        }
+      ],
+      "4:MAJ": [
+        {
+          "relPc": 11,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.66,
+          "exampleLoop": "C69 -> D69 -> E69 -> Bm7",
+          "songs": [
+            {
+              "id": "lWRSp0iKSks",
+              "title": "Usher Ft Pharrell “Certified”"
+            }
+          ]
+        }
+      ],
+      "9:MAJ": [
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.62,
+          "exampleLoop": "Fadd9 -> G9sus4 -> Amaj9 -> Cmaj9",
+          "songs": [
+            {
+              "id": "nwkXesb_5Ys",
+              "title": "Shanice “It’s For You”"
+            }
+          ]
+        }
+      ],
+      "6:SUS": [
+        {
+          "relPc": 5,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.61,
+          "exampleLoop": "Cmaj9 -> Gb9sus4 -> F9sus4 -> Bbmaj9",
+          "songs": [
+            {
+              "id": "7hsA8wtHHC4",
+              "title": "Incognito “Love, Joy, Understanding” Intro"
+            }
+          ]
+        }
+      ],
+      "2:DOM": [
+        {
+          "relPc": 7,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.6,
+          "exampleLoop": "D13 -> Gmaj9 -> C9sus4 -> Am9",
+          "songs": [
+            {
+              "id": "_12Rnn61T04",
+              "title": "Tyler’s “Boyfriend”"
+            },
+            {
+              "id": "yDlABN53h0s",
+              "title": "From Basic to Brilliant: How Tyler, The Creator, Com"
+            }
+          ]
+        }
+      ],
+      "6:MIN": [
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 2,
+          "jevScore": 2.41,
+          "exampleLoop": "Cmaj9 -> Gbm11 -> Cmaj9 -> Gmaj9",
+          "songs": [
+            {
+              "id": "IwUPtaQfY4w",
+              "title": "Joe Sample “Black Is The Color” Final Vamp"
+            }
+          ]
+        }
+      ]
+    },
+    "minor": {
+      "0:MIN": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 15,
+          "jevScore": 3.1,
+          "exampleLoop": "Dm9 -> Bm7 -> Bbmaj7 -> Am9",
+          "songs": [
+            {
+              "id": "LJyRtDGXrRM",
+              "title": "Lupe Fiasco “I'm Beamin”"
+            }
+          ]
+        },
+        {
+          "relPc": 8,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 13,
+          "jevScore": 3.31,
+          "exampleLoop": "Am11 -> Fm7 -> C69 -> Bbmaj13",
+          "songs": [
+            {
+              "id": "fWa2tYPw9Bw",
+              "title": "Those"
+            },
+            {
+              "id": "RJyvObNX7Ds",
+              "title": "Bobby Hutcherson “Montara”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 12,
+          "jevScore": 2.91,
+          "exampleLoop": "E9sus4 -> Am11 -> G9sus4 -> F#9sus4",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "9",
+          "family": "DOM",
+          "isTurnaround": true,
+          "lofiWeight": 10,
+          "jevScore": 2.6,
+          "exampleLoop": "D9 -> Dm9 -> E7b9 -> Am9",
+          "songs": [
+            {
+              "id": "8-MJZ6i2NJs",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "ap6Bh33D880",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "dm29w-7C8dw",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "dim7",
+          "family": "DIM",
+          "isTurnaround": false,
+          "lofiWeight": 7,
+          "jevScore": 2.28,
+          "exampleLoop": "Dm9 -> E7b9 -> Am9 -> Gdim7",
+          "songs": [
+            {
+              "id": "8-MJZ6i2NJs",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "ap6Bh33D880",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "dm29w-7C8dw",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.63,
+          "exampleLoop": "Fmaj9 -> E7#9#5 -> Am9 -> Cmaj7",
+          "songs": [
+            {
+              "id": "LDogyZwYoCg",
+              "title": "2Pac “Run Tha Streetz”"
+            },
+            {
+              "id": "t_aHVZXPAE0",
+              "title": "2Pac “Run Tha Streetz”"
+            }
+          ]
+        }
+      ],
+      "8:MIN": [
+        {
+          "relPc": 3,
+          "qual": "69",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 13,
+          "jevScore": 3.31,
+          "exampleLoop": "Am11 -> Fm7 -> C69 -> Bbmaj13",
+          "songs": [
+            {
+              "id": "fWa2tYPw9Bw",
+              "title": "Those"
+            },
+            {
+              "id": "RJyvObNX7Ds",
+              "title": "Bobby Hutcherson “Montara”"
+            }
+          ]
+        }
+      ],
+      "3:MAJ": [
+        {
+          "relPc": 1,
+          "qual": "maj13",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 13,
+          "jevScore": 3.31,
+          "exampleLoop": "Am11 -> Fm7 -> C69 -> Bbmaj13",
+          "songs": [
+            {
+              "id": "fWa2tYPw9Bw",
+              "title": "Those"
+            },
+            {
+              "id": "RJyvObNX7Ds",
+              "title": "Bobby Hutcherson “Montara”"
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 7,
+          "jevScore": 2.49,
+          "exampleLoop": "A9sus4 -> Dm7 -> Cmaj7 -> Bm7",
+          "songs": [
+            {
+              "id": "HWRnPM2O_Hc",
+              "title": "The Hardest Steely Dan Song? “Your Gold Teeth II”"
+            },
+            {
+              "id": "i9RJbHBscI0",
+              "title": "Steely Dan “Your Gold Teeth II”"
+            },
+            {
+              "id": "zvr3RvTfJ3Q",
+              "title": "This Intro Is Absolutely Nuts 🤯 ! Steely Dan “Your "
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "7",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.7,
+          "exampleLoop": "Cmaj9 -> E7 -> Amaj9 -> Dm9",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "7",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.66,
+          "exampleLoop": "Cadd9 -> G7 -> E9sus4 -> Gadd9",
+          "songs": [
+            {
+              "id": "CKkJ9Aafu0M",
+              "title": "D’Angelo “Lady”"
+            },
+            {
+              "id": "Pq2uJ6fNI7g",
+              "title": "D’Angelo “Lady”"
+            }
+          ]
+        },
+        {
+          "relPc": 8,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 5,
+          "jevScore": 2.63,
+          "exampleLoop": "Fmaj9 -> E7#9#5 -> Am9 -> Cmaj7",
+          "songs": [
+            {
+              "id": "LDogyZwYoCg",
+              "title": "2Pac “Run Tha Streetz”"
+            },
+            {
+              "id": "t_aHVZXPAE0",
+              "title": "2Pac “Run Tha Streetz”"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.84,
+          "exampleLoop": "Cmaj9 -> E9sus4 -> Amaj9 -> G9sus4",
+          "songs": [
+            {
+              "id": "5Lky5buDurk",
+              "title": "Title Tyler, The Creator & Roy Ayers “Find Your Wing"
+            }
+          ]
+        }
+      ],
+      "1:MAJ": [
+        {
+          "relPc": 0,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 19,
+          "jevScore": 3.31,
+          "exampleLoop": "Am11 -> Fm7 -> C69 -> Bbmaj13",
+          "songs": [
+            {
+              "id": "fWa2tYPw9Bw",
+              "title": "Those"
+            },
+            {
+              "id": "RJyvObNX7Ds",
+              "title": "Bobby Hutcherson “Montara”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm7 -> Cm9 -> Bbmaj9 -> A9sus4",
+          "songs": [
+            {
+              "id": "qA2aVlpE05U",
+              "title": "RoBKTA ft. Tudd R4cin' “All Night”"
+            }
+          ]
+        },
+        {
+          "relPc": 11,
+          "qual": "7#11",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.89,
+          "exampleLoop": "Fmaj7 -> Bbmaj7 -> G#7#11 -> Gm7",
+          "songs": [
+            {
+              "id": "Mj1_C0McbNw",
+              "title": "Earth, Wind & Fire “Can’t Let Go”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "7#9#5",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.68,
+          "exampleLoop": "Dm9 -> B7#11 -> Bbmaj7 -> A7#9#5",
+          "songs": [
+            {
+              "id": "MJIkONKGdMg",
+              "title": "Jeff Lorber Fusion “Lava Lands”"
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "7#9",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.67,
+          "exampleLoop": "Am9 -> Gm9 -> Bbmaj7 -> B7#9",
+          "songs": [
+            {
+              "id": "gZDBRUEFqKU",
+              "title": "Neo-Soul Secrets: Decoding The Internet's 'La Di Da'"
+            }
+          ]
+        }
+      ],
+      "3:SUS": [
+        {
+          "relPc": 8,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 6,
+          "jevScore": 2.78,
+          "exampleLoop": "Fmaj9 -> Gadd9 -> Aadd9 -> C9sus4",
+          "songs": [
+            {
+              "id": "U688UyqOLCQ",
+              "title": "Jorja Smith “Greatest Gift”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "C9sus4 -> D9sus4 -> Ebmaj9 -> C#maj9",
+          "songs": [
+            {
+              "id": "1ZdPCmkU3nM",
+              "title": "Illa J “Sunflower” feat. Potatohead People"
+            }
+          ]
+        }
+      ],
+      "5:SUS": [
+        {
+          "relPc": 6,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "C9sus4 -> D9sus4 -> Ebmaj9 -> C#maj9",
+          "songs": [
+            {
+              "id": "1ZdPCmkU3nM",
+              "title": "Illa J “Sunflower” feat. Potatohead People"
+            }
+          ]
+        },
+        {
+          "relPc": 6,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3,
+          "exampleLoop": "Am9 -> D9sus4 -> Eb9sus4 -> F9sus4",
+          "songs": [
+            {
+              "id": "qjaC7omkKG4",
+              "title": "South Yokohama “Racing Lagoon”"
+            }
+          ]
+        }
+      ],
+      "6:MAJ": [
+        {
+          "relPc": 4,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "C9sus4 -> D9sus4 -> Ebmaj9 -> C#maj9",
+          "songs": [
+            {
+              "id": "1ZdPCmkU3nM",
+              "title": "Illa J “Sunflower” feat. Potatohead People"
+            }
+          ]
+        }
+      ],
+      "4:MAJ": [
+        {
+          "relPc": 3,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 3.2,
+          "exampleLoop": "C9sus4 -> D9sus4 -> Ebmaj9 -> C#maj9",
+          "songs": [
+            {
+              "id": "1ZdPCmkU3nM",
+              "title": "Illa J “Sunflower” feat. Potatohead People"
+            }
+          ]
+        }
+      ],
+      "5:MIN": [
+        {
+          "relPc": 7,
+          "qual": "7b9",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 17,
+          "jevScore": 2.6,
+          "exampleLoop": "D9 -> Dm9 -> E7b9 -> Am9",
+          "songs": [
+            {
+              "id": "8-MJZ6i2NJs",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "ap6Bh33D880",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "dm29w-7C8dw",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 11,
+          "jevScore": 3.1,
+          "exampleLoop": "Dm9 -> Bm7 -> Bbmaj7 -> Am9",
+          "songs": [
+            {
+              "id": "LJyRtDGXrRM",
+              "title": "Lupe Fiasco “I'm Beamin”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 10,
+          "jevScore": 2.7,
+          "exampleLoop": "Cmaj9 -> E7 -> Amaj9 -> Dm9",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.93,
+          "exampleLoop": "Dm9 -> Gm11 -> Em11 -> Am9",
+          "songs": [
+            {
+              "id": "QiS3yNA9Jc0",
+              "title": "Jamiroquai ‘Where Do We Go From Here’"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm9 -> E9sus4 -> G9sus4 -> A9sus4",
+          "songs": [
+            {
+              "id": "wUtzKn3TIj0",
+              "title": "Gas-Lab x Paul Grant “Summer Drive”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm7 -> Cm9 -> Bbmaj9 -> A9sus4",
+          "songs": [
+            {
+              "id": "qA2aVlpE05U",
+              "title": "RoBKTA ft. Tudd R4cin' “All Night”"
+            }
+          ]
+        }
+      ],
+      "2:MIN": [
+        {
+          "relPc": 0,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": true,
+          "lofiWeight": 7,
+          "jevScore": 2.49,
+          "exampleLoop": "A9sus4 -> Dm7 -> Cmaj7 -> Bm7",
+          "songs": [
+            {
+              "id": "HWRnPM2O_Hc",
+              "title": "The Hardest Steely Dan Song? “Your Gold Teeth II”"
+            },
+            {
+              "id": "i9RJbHBscI0",
+              "title": "Steely Dan “Your Gold Teeth II”"
+            },
+            {
+              "id": "zvr3RvTfJ3Q",
+              "title": "This Intro Is Absolutely Nuts 🤯 ! Steely Dan “Your "
+            }
+          ]
+        },
+        {
+          "relPc": 1,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 3.1,
+          "exampleLoop": "Dm9 -> Bm7 -> Bbmaj7 -> Am9",
+          "songs": [
+            {
+              "id": "LJyRtDGXrRM",
+              "title": "Lupe Fiasco “I'm Beamin”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 6,
+          "jevScore": 2.84,
+          "exampleLoop": "Am11 -> G9sus4 -> F#9sus4 -> Bm9",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "7#9#5",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.66,
+          "exampleLoop": "Dm11 -> Bm11 -> E7#9#5 -> Am11",
+          "songs": [
+            {
+              "id": "-gDI19p8oq0",
+              "title": "Gran Turismo 5 “Mesmerium” Part 1"
+            }
+          ]
+        }
+      ],
+      "7:SUS": [
+        {
+          "relPc": 0,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.91,
+          "exampleLoop": "E9sus4 -> Am11 -> G9sus4 -> F#9sus4",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "add9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.66,
+          "exampleLoop": "Cadd9 -> G7 -> E9sus4 -> Gadd9",
+          "songs": [
+            {
+              "id": "CKkJ9Aafu0M",
+              "title": "D’Angelo “Lady”"
+            },
+            {
+              "id": "Pq2uJ6fNI7g",
+              "title": "D’Angelo “Lady”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm9 -> E9sus4 -> G9sus4 -> A9sus4",
+          "songs": [
+            {
+              "id": "wUtzKn3TIj0",
+              "title": "Gas-Lab x Paul Grant “Summer Drive”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.84,
+          "exampleLoop": "Cmaj9 -> E9sus4 -> Amaj9 -> G9sus4",
+          "songs": [
+            {
+              "id": "5Lky5buDurk",
+              "title": "Title Tyler, The Creator & Roy Ayers “Find Your Wing"
+            }
+          ]
+        }
+      ],
+      "10:SUS": [
+        {
+          "relPc": 9,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 12,
+          "jevScore": 2.91,
+          "exampleLoop": "E9sus4 -> Am11 -> G9sus4 -> F#9sus4",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm9 -> E9sus4 -> G9sus4 -> A9sus4",
+          "songs": [
+            {
+              "id": "wUtzKn3TIj0",
+              "title": "Gas-Lab x Paul Grant “Summer Drive”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.84,
+          "exampleLoop": "Cmaj9 -> E9sus4 -> Amaj9 -> G9sus4",
+          "songs": [
+            {
+              "id": "5Lky5buDurk",
+              "title": "Title Tyler, The Creator & Roy Ayers “Find Your Wing"
+            }
+          ]
+        }
+      ],
+      "0:SUS": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 13,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm9 -> E9sus4 -> G9sus4 -> A9sus4",
+          "songs": [
+            {
+              "id": "wUtzKn3TIj0",
+              "title": "Gas-Lab x Paul Grant “Summer Drive”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.61,
+          "exampleLoop": "Fmaj7 -> E7 -> A9sus4 -> C9sus4",
+          "songs": [
+            {
+              "id": "qi45bo-yCtA",
+              "title": "Still One of the Smoothest R&B Progressions Ever – D"
+            }
+          ]
+        }
+      ],
+      "3:MIN": [
+        {
+          "relPc": 1,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3.05,
+          "exampleLoop": "Dm7 -> Cm9 -> Bbmaj9 -> A9sus4",
+          "songs": [
+            {
+              "id": "qA2aVlpE05U",
+              "title": "RoBKTA ft. Tudd R4cin' “All Night”"
+            }
+          ]
+        }
+      ],
+      "6:SUS": [
+        {
+          "relPc": 8,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 3,
+          "exampleLoop": "Am9 -> D9sus4 -> Eb9sus4 -> F9sus4",
+          "songs": [
+            {
+              "id": "qjaC7omkKG4",
+              "title": "South Yokohama “Racing Lagoon”"
+            }
+          ]
+        }
+      ],
+      "8:SUS": [
+        {
+          "relPc": 0,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 3,
+          "exampleLoop": "Am9 -> D9sus4 -> Eb9sus4 -> F9sus4",
+          "songs": [
+            {
+              "id": "qjaC7omkKG4",
+              "title": "South Yokohama “Racing Lagoon”"
+            }
+          ]
+        }
+      ],
+      "10:MIN": [
+        {
+          "relPc": 7,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.93,
+          "exampleLoop": "Dm9 -> Gm11 -> Em11 -> Am9",
+          "songs": [
+            {
+              "id": "QiS3yNA9Jc0",
+              "title": "Jamiroquai ‘Where Do We Go From Here’"
+            }
+          ]
+        },
+        {
+          "relPc": 1,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm9 -> Gm9 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "WbIPt8y2QNY",
+              "title": "Level 42 “Sirens”"
+            }
+          ]
+        },
+        {
+          "relPc": 8,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.89,
+          "exampleLoop": "Fmaj7 -> Bbmaj7 -> G#7#11 -> Gm7",
+          "songs": [
+            {
+              "id": "Mj1_C0McbNw",
+              "title": "Earth, Wind & Fire “Can’t Let Go”"
+            }
+          ]
+        },
+        {
+          "relPc": 1,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.67,
+          "exampleLoop": "Am9 -> Gm9 -> Bbmaj7 -> B7#9",
+          "songs": [
+            {
+              "id": "gZDBRUEFqKU",
+              "title": "Neo-Soul Secrets: Decoding The Internet's 'La Di Da'"
+            }
+          ]
+        }
+      ],
+      "7:MIN": [
+        {
+          "relPc": 0,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.93,
+          "exampleLoop": "Dm9 -> Gm11 -> Em11 -> Am9",
+          "songs": [
+            {
+              "id": "QiS3yNA9Jc0",
+              "title": "Jamiroquai ‘Where Do We Go From Here’"
+            }
+          ]
+        }
+      ],
+      "1:MIN": [
+        {
+          "relPc": 0,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.91,
+          "exampleLoop": "Dm9 -> Gm9 -> Bbm9 -> Am9",
+          "songs": [
+            {
+              "id": "WbIPt8y2QNY",
+              "title": "Level 42 “Sirens”"
+            }
+          ]
+        }
+      ],
+      "9:SUS": [
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": true,
+          "lofiWeight": 6,
+          "jevScore": 2.91,
+          "exampleLoop": "E9sus4 -> Am11 -> G9sus4 -> F#9sus4",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        },
+        {
+          "relPc": 2,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 6,
+          "jevScore": 2.84,
+          "exampleLoop": "Am11 -> G9sus4 -> F#9sus4 -> Bm9",
+          "songs": [
+            {
+              "id": "c5lIzFDfPc4",
+              "title": "Patrice Rushen “Settle For My Love”"
+            },
+            {
+              "id": "yNbkz7nLVe8",
+              "title": "Patrice Rushen \"Settle For My Love\" Soulful"
+            }
+          ]
+        }
+      ],
+      "8:MAJ": [
+        {
+          "relPc": 7,
+          "qual": "7#9#5",
+          "family": "DOM",
+          "isTurnaround": false,
+          "lofiWeight": 8,
+          "jevScore": 2.63,
+          "exampleLoop": "Fmaj9 -> E7#9#5 -> Am9 -> Cmaj7",
+          "songs": [
+            {
+              "id": "LDogyZwYoCg",
+              "title": "2Pac “Run Tha Streetz”"
+            },
+            {
+              "id": "t_aHVZXPAE0",
+              "title": "2Pac “Run Tha Streetz”"
+            }
+          ]
+        },
+        {
+          "relPc": 1,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.89,
+          "exampleLoop": "Fmaj7 -> Bbmaj7 -> G#7#11 -> Gm7",
+          "songs": [
+            {
+              "id": "Mj1_C0McbNw",
+              "title": "Earth, Wind & Fire “Can’t Let Go”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "add9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.78,
+          "exampleLoop": "Fmaj9 -> Gadd9 -> Aadd9 -> C9sus4",
+          "songs": [
+            {
+              "id": "U688UyqOLCQ",
+              "title": "Jorja Smith “Greatest Gift”"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.72,
+          "exampleLoop": "Am9 -> F69 -> Dm9 -> Em9",
+          "songs": [
+            {
+              "id": "dvpPX_I_j0s",
+              "title": "Alicia Keys “Feeling U, Feeling Me” (Interlude)"
+            }
+          ]
+        },
+        {
+          "relPc": 7,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 2,
+          "jevScore": 2.35,
+          "exampleLoop": "Fmaj7 -> Em7 -> Am7 -> G",
+          "songs": [
+            {
+              "id": "LUPUI1XLH6o",
+              "title": "Funky Chord Mastery: Sedan “Just Be My Lover” Chord "
+            }
+          ]
+        }
+      ],
+      "11:DOM": [
+        {
+          "relPc": 10,
+          "qual": "m7",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.89,
+          "exampleLoop": "Fmaj7 -> Bbmaj7 -> G#7#11 -> Gm7",
+          "songs": [
+            {
+              "id": "Mj1_C0McbNw",
+              "title": "Earth, Wind & Fire “Can’t Let Go”"
+            }
+          ]
+        }
+      ],
+      "0:MAJ": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.7,
+          "exampleLoop": "Cmaj9 -> E7 -> Amaj9 -> Dm9",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        },
+        {
+          "relPc": 10,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.84,
+          "exampleLoop": "Cmaj9 -> E9sus4 -> Amaj9 -> G9sus4",
+          "songs": [
+            {
+              "id": "5Lky5buDurk",
+              "title": "Title Tyler, The Creator & Roy Ayers “Find Your Wing"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.78,
+          "exampleLoop": "Fmaj9 -> Gadd9 -> Aadd9 -> C9sus4",
+          "songs": [
+            {
+              "id": "U688UyqOLCQ",
+              "title": "Jorja Smith “Greatest Gift”"
+            }
+          ]
+        }
+      ],
+      "10:MAJ": [
+        {
+          "relPc": 3,
+          "qual": "add9",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 5,
+          "jevScore": 2.66,
+          "exampleLoop": "Cadd9 -> G7 -> E9sus4 -> Gadd9",
+          "songs": [
+            {
+              "id": "CKkJ9Aafu0M",
+              "title": "D’Angelo “Lady”"
+            },
+            {
+              "id": "Pq2uJ6fNI7g",
+              "title": "D’Angelo “Lady”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "add9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.78,
+          "exampleLoop": "Fmaj9 -> Gadd9 -> Aadd9 -> C9sus4",
+          "songs": [
+            {
+              "id": "U688UyqOLCQ",
+              "title": "Jorja Smith “Greatest Gift”"
+            }
+          ]
+        },
+        {
+          "relPc": 8,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": true,
+          "lofiWeight": 2,
+          "jevScore": 2.35,
+          "exampleLoop": "Fmaj7 -> Em7 -> Am7 -> G",
+          "songs": [
+            {
+              "id": "LUPUI1XLH6o",
+              "title": "Funky Chord Mastery: Sedan “Just Be My Lover” Chord "
+            }
+          ]
+        }
+      ],
+      "7:DOM": [
+        {
+          "relPc": 0,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 25,
+          "jevScore": 2.66,
+          "exampleLoop": "Dm11 -> Bm11 -> E7#9#5 -> Am11",
+          "songs": [
+            {
+              "id": "-gDI19p8oq0",
+              "title": "Gran Turismo 5 “Mesmerium” Part 1"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.7,
+          "exampleLoop": "Cmaj9 -> E7 -> Amaj9 -> Dm9",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.61,
+          "exampleLoop": "Fmaj7 -> E7 -> A9sus4 -> C9sus4",
+          "songs": [
+            {
+              "id": "qi45bo-yCtA",
+              "title": "Still One of the Smoothest R&B Progressions Ever – D"
+            }
+          ]
+        },
+        {
+          "relPc": 5,
+          "qual": "m11",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.52,
+          "exampleLoop": "Dm11 -> G13 -> Cmaj9 -> E7",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        }
+      ],
+      "2:DOM": [
+        {
+          "relPc": 1,
+          "qual": "maj7",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.68,
+          "exampleLoop": "Dm9 -> B7#11 -> Bbmaj7 -> A7#9#5",
+          "songs": [
+            {
+              "id": "MJIkONKGdMg",
+              "title": "Jeff Lorber Fusion “Lava Lands”"
+            }
+          ]
+        },
+        {
+          "relPc": 0,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.67,
+          "exampleLoop": "Am9 -> Gm9 -> Bbmaj7 -> B7#9",
+          "songs": [
+            {
+              "id": "gZDBRUEFqKU",
+              "title": "Neo-Soul Secrets: Decoding The Internet's 'La Di Da'"
+            }
+          ]
+        }
+      ],
+      "0:DOM": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 3,
+          "jevScore": 2.68,
+          "exampleLoop": "Dm9 -> B7#11 -> Bbmaj7 -> A7#9#5",
+          "songs": [
+            {
+              "id": "MJIkONKGdMg",
+              "title": "Jeff Lorber Fusion “Lava Lands”"
+            }
+          ]
+        }
+      ],
+      "10:DOM": [
+        {
+          "relPc": 7,
+          "qual": "9sus4",
+          "family": "SUS",
+          "isTurnaround": false,
+          "lofiWeight": 5,
+          "jevScore": 2.66,
+          "exampleLoop": "Cadd9 -> G7 -> E9sus4 -> Gadd9",
+          "songs": [
+            {
+              "id": "CKkJ9Aafu0M",
+              "title": "D’Angelo “Lady”"
+            },
+            {
+              "id": "Pq2uJ6fNI7g",
+              "title": "D’Angelo “Lady”"
+            }
+          ]
+        },
+        {
+          "relPc": 3,
+          "qual": "maj9",
+          "family": "MAJ",
+          "isTurnaround": false,
+          "lofiWeight": 3,
+          "jevScore": 2.52,
+          "exampleLoop": "Dm11 -> G13 -> Cmaj9 -> E7",
+          "songs": [
+            {
+              "id": "XYQT6VERwcU",
+              "title": "This SWV “Use Your Heart”"
+            }
+          ]
+        }
+      ],
+      "5:DOM": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": false,
+          "lofiWeight": 10,
+          "jevScore": 2.6,
+          "exampleLoop": "D9 -> Dm9 -> E7b9 -> Am9",
+          "songs": [
+            {
+              "id": "8-MJZ6i2NJs",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "ap6Bh33D880",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "dm29w-7C8dw",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            }
+          ]
+        }
+      ],
+      "10:DIM": [
+        {
+          "relPc": 5,
+          "qual": "m9",
+          "family": "MIN",
+          "isTurnaround": true,
+          "lofiWeight": 7,
+          "jevScore": 2.28,
+          "exampleLoop": "Dm9 -> E7b9 -> Am9 -> Gdim7",
+          "songs": [
+            {
+              "id": "8-MJZ6i2NJs",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "ap6Bh33D880",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            },
+            {
+              "id": "dm29w-7C8dw",
+              "title": "Jamiroquai “Spend A Lifetime”"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
