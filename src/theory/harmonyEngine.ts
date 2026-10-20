@@ -18,6 +18,8 @@ export type HarmonicFunction =
 
 export type ComplexityLevel = "auto_genre" | "triad" | "seventh" | "extended";
 
+export type QualityFamily = "MAJ" | "MIN" | "DOM" | "SUS" | "DIM";
+
 export type EmotionQuadrant =
   | "bright_expand" // 12시: 설렘 · 밝은 확장 (Subdominant / Lydian / Groove)
   | "tension_drive" // 3시: 긴장 · 추진력 · 에너지 (Dominant / Secondary Dom)
@@ -43,6 +45,7 @@ export interface ChordCandidate {
   roman: string;
   root: string;
   quality: string;
+  family: QualityFamily;
   notes: string[];
   category: HarmonicCategory;
   categoryLabel: string;
@@ -54,15 +57,18 @@ export interface ChordCandidate {
   idiomTag?: string;
   voiceLeading: VoiceLeadingAnalysis;
   baseTheoryWeight: number; // 0 ~ 100
-  jevProbability?: number; // 0 ~ 1
-  // Neo-Soul Corpus RAG fields (Methods 1, 2, 3)
+  jevProbability?: number; // Final 3-Engine Ensemble Probability (0 ~ 1)
+  rawJevProb?: number; // Raw Jev SystemOne Probability (50% weight)
+  theoryProb?: number; // Tonal + VoiceLeading Softmax Probability (30% weight)
+  corpusProb?: number; // Git Corpus Empirical Probability (20% weight)
+  // Neo-Soul Corpus RAG fields
   corpusCount: number;
   corpusSongs: CorpusSongRef[];
   isFromCorpus?: boolean;
   // Emotion Radar Polar Coordinates
   emotionQuadrant: EmotionQuadrant;
   emotionLabel: string;
-  emotionAngleDeg: number; // 0° = 12시(Top), 90° = 3시(Right), 180° = 6시(Bottom), 270° = 9시(Left)
+  emotionAngleDeg: number;
 }
 
 export interface ProgressionStep {
@@ -82,6 +88,7 @@ export interface ProgressionStep {
 interface CorpusEntry {
   relPc: number;
   qual: string;
+  family?: QualityFamily;
   count: number;
   songs: CorpusSongRef[];
 }
@@ -93,6 +100,7 @@ const neoSoulCorpus = neoSoulCorpusRaw as {
     totalTransitionsExtracted: number;
   };
   openings: Record<KeyMode, CorpusEntry[]>;
+  transitions2GramByFamily?: Record<KeyMode, Record<string, CorpusEntry[]>>;
   transitions2Gram: Record<KeyMode, Record<string, CorpusEntry[]>>;
   transitions3Gram: Record<KeyMode, Record<string, CorpusEntry[]>>;
 };
@@ -141,22 +149,22 @@ export const MOOD_PRESETS: MoodPreset[] = [
     description:
       "inbm001/progressions 코퍼스(857곡)의 실제 m11·9sus4·13·7#9#5·69 텐션과 실전 아티스트 전이 패턴을 최우선 반영합니다.",
     preferredCategories: {
-      diatonic: 0.95,
-      secondary_dominant: 1.35,
-      modal_interchange: 1.35,
-      tritone_sub: 1.4,
+      diatonic: 1.0,
+      secondary_dominant: 1.25,
+      modal_interchange: 1.3,
+      tritone_sub: 1.35,
     },
     preferredFunctions: {
-      Tonic: 1.0,
-      Subdominant: 1.15,
-      Dominant: 1.1,
-      "Secondary Dominant": 1.35,
-      "Modal Interchange": 1.35,
-      "Tritone Sub": 1.4,
+      Tonic: 1.05,
+      Subdominant: 1.2,
+      Dominant: 1.15,
+      "Secondary Dominant": 1.25,
+      "Modal Interchange": 1.3,
+      "Tritone Sub": 1.35,
     },
-    targetTension: 3.2,
+    targetTension: 3.1,
     promptHint:
-      "Authentic Neo-Soul & Jazz R&B grounded in the 857-song progressions corpus: lush m11/maj9/13sus4/7#9#5 extensions, chromatic mediants, and tritone substitutions.",
+      "Authentic Neo-Soul & Jazz R&B grounded in the 857-song progressions corpus: lush m11/maj9/9sus4/7#9#5 extensions, smooth groove subdominants, chromatic mediants, and tritone substitutions.",
     extensionStyle: {
       tonicMaj: ["maj9", "69"],
       subdomMaj: ["maj9", "maj13"],
@@ -174,20 +182,20 @@ export const MOOD_PRESETS: MoodPreset[] = [
     description:
       "왕도 진행(IVmaj7-V7-iiim7-vim7), Just The Two Of Us(IVmaj7-III7-vim9), 백도어 종지 등 세련된 어반 화성을 만듭니다.",
     preferredCategories: {
-      diatonic: 1.05,
-      secondary_dominant: 1.4,
-      modal_interchange: 1.35,
-      tritone_sub: 1.15,
+      diatonic: 1.1,
+      secondary_dominant: 1.3,
+      modal_interchange: 1.3,
+      tritone_sub: 1.1,
     },
     preferredFunctions: {
-      Tonic: 0.95,
+      Tonic: 1.0,
       Subdominant: 1.35,
       Dominant: 1.15,
-      "Secondary Dominant": 1.4,
-      "Modal Interchange": 1.35,
-      "Tritone Sub": 1.15,
+      "Secondary Dominant": 1.3,
+      "Modal Interchange": 1.3,
+      "Tritone Sub": 1.1,
     },
-    targetTension: 2.7,
+    targetTension: 2.6,
     promptHint:
       "City Pop / Urban groove featuring Royal Road (IVmaj7-V7-iiim7-vim9), III7b9->vim9 turns, and backdoor bVII9 cadences.",
     extensionStyle: {
@@ -208,9 +216,9 @@ export const MOOD_PRESETS: MoodPreset[] = [
       "add9·maj7·7sus4·m6 등 따뜻한 텐션과 세컨더리 도미넌트, 서브도미넌트 마이너(ivm6) 라인 클리셰를 조합합니다.",
     preferredCategories: {
       diatonic: 1.25,
-      secondary_dominant: 1.2,
+      secondary_dominant: 1.15,
       modal_interchange: 1.2,
-      tritone_sub: 0.7,
+      tritone_sub: 0.75,
     },
     preferredFunctions: {
       Tonic: 1.15,
@@ -218,7 +226,7 @@ export const MOOD_PRESETS: MoodPreset[] = [
       Dominant: 1.15,
       "Secondary Dominant": 1.15,
       "Modal Interchange": 1.2,
-      "Tritone Sub": 0.7,
+      "Tritone Sub": 0.75,
     },
     targetTension: 1.9,
     promptHint:
@@ -240,17 +248,17 @@ export const MOOD_PRESETS: MoodPreset[] = [
     description:
       "넓은 add9·maj7과 3도권 반음계 화성(Chromatic Mediant), 패러렐 마이너 차용화음(bVImaj7, bVII, iv)으로 웅장한 서사를 만듭니다.",
     preferredCategories: {
-      diatonic: 1.0,
-      secondary_dominant: 1.05,
-      modal_interchange: 1.55,
+      diatonic: 1.05,
+      secondary_dominant: 1.0,
+      modal_interchange: 1.5,
       tritone_sub: 0.85,
     },
     preferredFunctions: {
       Tonic: 1.1,
       Subdominant: 1.2,
       Dominant: 1.05,
-      "Secondary Dominant": 1.05,
-      "Modal Interchange": 1.55,
+      "Secondary Dominant": 1.0,
+      "Modal Interchange": 1.5,
       "Tritone Sub": 0.85,
     },
     targetTension: 2.4,
@@ -312,8 +320,28 @@ function getChroma(note: string): number {
 }
 
 /**
- * Convert a relative pitch class (0..11) from `keyTonic` into a clean note name
+ * Strictly classify chord suffix into one of 5 harmonic quality families (`MAJ`, `MIN`, `DOM`, `SUS`, `DIM`)
+ * Fixes the bug where `maj9` matched `9` (dominant)!
  */
+export function getQualityFamily(qualSuffix: string): QualityFamily {
+  const q = qualSuffix.trim();
+  if (!q) return "MAJ";
+  if (q.includes("sus")) return "SUS";
+  if (q.includes("dim") || q.includes("m7b5") || q.includes("ø")) return "DIM";
+  if (
+    q.startsWith("maj") ||
+    q.startsWith("Maj") ||
+    q === "add9" ||
+    q === "69" ||
+    q === "6"
+  ) {
+    return "MAJ";
+  }
+  if (q.startsWith("m")) return "MIN";
+  if (q.startsWith("7") || q === "9" || q === "13") return "DOM";
+  return "MAJ";
+}
+
 const INTERVAL_FROM_REL_PC: Record<number, string> = {
   0: "1P",
   1: "2m",
@@ -368,7 +396,6 @@ export function buildSmoothVoicing(
     ? chordData.notes.map(normalizeNote)
     : [];
 
-  // Fallback for special Neo-Soul symbols like 7#9#5 or maj9#11 if Tonal returns empty
   if (rawNotes.length === 0) {
     const m = chordSymbol.match(/^([A-G][b#]?)(.*)$/);
     const root = m ? m[1] : "C";
@@ -572,9 +599,6 @@ function buildGenreAwareChordSymbols(
   return suffixes.slice(0, 2).map((suf) => `${root}${suf}`);
 }
 
-/**
- * Assign Emotion Quadrant & Angle (0°=12시 Bright/Expand, 90°=3시 Tension/Drive, 180°=6시 Deep/Soul/Modal, 270°=9시 Peace/Rest)
- */
 function computeEmotionCoordinates(
   harmonicFunction: HarmonicFunction,
   category: HarmonicCategory,
@@ -586,14 +610,12 @@ function computeEmotionCoordinates(
   emotionLabel: string;
   emotionAngleDeg: number;
 } {
-  // Deterministic jitter based on symbol characters and relPc so nodes spread neatly inside their quadrant
   const hash = symbol
     .split("")
     .reduce((acc, ch, i) => acc + ch.charCodeAt(0) * (i + 3), relPc * 13);
-  const spreadOffset = ((hash % 56) - 28) + ((indexInGroup % 3) - 1) * 8; // -36° to +36°
+  const spreadOffset = (hash % 56) - 28 + ((indexInGroup % 3) - 1) * 8;
 
   if (harmonicFunction === "Subdominant" && category === "diatonic") {
-    // 12시 (Top: 325° ~ 35°): 밝음 · 설렘 · 공간 확장
     const angle = (360 + spreadOffset) % 360;
     return {
       emotionQuadrant: "bright_expand",
@@ -608,7 +630,6 @@ function computeEmotionCoordinates(
     harmonicFunction === "Dominant" ||
     harmonicFunction === "Secondary Dominant"
   ) {
-    // 3시 (Right: 55° ~ 125°): 긴장 · 추진력 · 에너지
     const angle = (90 + spreadOffset + 360) % 360;
     return {
       emotionQuadrant: "tension_drive",
@@ -626,7 +647,6 @@ function computeEmotionCoordinates(
     harmonicFunction === "Modal Interchange" ||
     harmonicFunction === "Tritone Sub"
   ) {
-    // 6시 (Bottom: 145° ~ 215°): 애절함 · 몽환 · 다크/재즈 반전
     const angle = (180 + spreadOffset + 360) % 360;
     return {
       emotionQuadrant: "deep_soul",
@@ -638,7 +658,6 @@ function computeEmotionCoordinates(
     };
   }
 
-  // 9시 (Left: 235° ~ 305°): 평온 · 안정 · 서정적 안식 (Tonic / vi / iii)
   const angle = (270 + spreadOffset + 360) % 360;
   return {
     emotionQuadrant: "peace_rest",
@@ -648,12 +667,16 @@ function computeEmotionCoordinates(
   };
 }
 
+/**
+ * Upgraded Stage 3 Weighting Engine with Phrase-Position Role Weighting & Strict Corpus Bonus
+ */
 function evaluateTransitionTheory(
   progression: ProgressionStep[],
   candidate: {
     symbol: string;
     roman: string;
     root: string;
+    family: QualityFamily;
     category: HarmonicCategory;
     harmonicFunction: HarmonicFunction;
     functionKorean: string;
@@ -670,7 +693,10 @@ function evaluateTransitionTheory(
   const twoBackChord =
     progression.length > 1 ? progression[progression.length - 2] : null;
 
-  const corpusBonus = Math.min(14, Math.round(Math.log2(candidate.corpusCount + 1) * 3.2));
+  const corpusBonus = Math.min(
+    14,
+    Math.round(Math.log2(candidate.corpusCount + 1) * 3.1)
+  );
   const corpusNote =
     candidate.corpusCount > 0
       ? ` [네오소울 코퍼스 ${candidate.corpusCount}회 등장: ${candidate.corpusSongs
@@ -679,45 +705,61 @@ function evaluateTransitionTheory(
           .join(", ")}]`
       : "";
 
-  // Bar 1 (Starting Chord Selection Mode!)
+  // === BAR 1: OPENING CHORD ROLE WEIGHTS ===
   if (!prevChord) {
-    if (candidate.roman.startsWith("I") || candidate.roman.startsWith("i")) {
+    // Penalize jarring unresolved altered secondary dominants or half-diminished on Bar 1
+    if (
+      candidate.category === "secondary_dominant" ||
+      candidate.category === "tritone_sub" ||
+      candidate.roman.startsWith("vii")
+    ) {
+      return {
+        title: `${candidate.functionKorean} 변칙 오프닝`,
+        reason: `첫 마디부터 강한 도미넌트 텐션(${candidate.symbol})으로 시작하는 변칙 오프닝입니다.${corpusNote}`,
+        weight: Math.max(35, 52 + corpusBonus - 16),
+      };
+    }
+    const isTonicRoman = /^I(?!V|I)|^i(?!v|i)/.test(candidate.roman);
+    const isSubdomIVRoman = /^IV|^iv/.test(candidate.roman);
+    const isViRoman = /^vi(?!i)|^bVI(?!I)/.test(candidate.roman);
+    const isIiRoman = /^ii(?!i)/.test(candidate.roman);
+
+    if (isTonicRoman) {
       return {
         title: "토닉(Tonic) 센터 오프닝",
         reason: `${keyTonic} ${keyMode === "major" ? "메이저" : "마이너"}의 중심 화음(${candidate.symbol})으로 시작합니다.${corpusNote}`,
-        weight: Math.min(98, 90 + corpusBonus),
+        weight: Math.min(98, 86 + corpusBonus),
         idiomTag: "Tonic Opening",
       };
     }
-    if (candidate.roman.startsWith("IV") || candidate.roman.startsWith("iv")) {
+    if (isSubdomIVRoman) {
       return {
         title: "서브도미넌트 오프닝 (IV 시작 기법)",
         reason: `시티팝·네오소울에서 가장 사랑받는 ${candidate.symbol}(${candidate.roman}) 오프닝으로 첫 마디부터 세련된 공간감을 만듭니다.${corpusNote}`,
-        weight: Math.min(97, 88 + corpusBonus),
+        weight: Math.min(97, 85 + corpusBonus),
         idiomTag: "Subdominant Opening",
       };
     }
-    if (candidate.roman.startsWith("vi") || candidate.roman.startsWith("bVI")) {
+    if (isViRoman) {
       return {
         title: "에올리안(vi/bVI) 감성 오프닝",
         reason: `서정적이고 아련한 색채의 ${candidate.symbol} 화음으로 시작합니다.${corpusNote}`,
-        weight: Math.min(95, 83 + corpusBonus),
+        weight: Math.min(95, 82 + corpusBonus),
         idiomTag: "Emotional Opening",
       };
     }
-    if (candidate.roman.startsWith("ii")) {
+    if (isIiRoman) {
       return {
         title: "투-파이브(ii-V) 그루브 오프닝",
-        reason: `2도 화음(${candidate.symbol})으로 시작하여 곧바로 리드미컬한 도미넌트 흐름을 타는 네오소울·재즈 오프닝입니다.${corpusNote}`,
-        weight: Math.min(95, 84 + corpusBonus),
+        reason: `2도 화음(${candidate.symbol})으로 시작하여 리드미컬한 도미넌트 흐름을 타는 네오소울·재즈 오프닝입니다.${corpusNote}`,
+        weight: Math.min(95, 83 + corpusBonus),
         idiomTag: "ii-V Groove Opening",
       };
     }
     return {
       title: `${candidate.functionKorean} 오프닝`,
       reason: `${candidate.symbol} (${candidate.roman}) 코드로 개성 있는 첫 마디를 시작합니다.${corpusNote}`,
-      weight: Math.min(92, 68 + corpusBonus),
-      idiomTag: candidate.corpusCount > 0 ? "Neo-Soul Opening" : undefined,
+      weight: Math.min(90, 68 + corpusBonus),
     };
   }
 
@@ -730,16 +772,19 @@ function evaluateTransitionTheory(
     .slice(-4)
     .filter((s) => Chord.get(s.symbol).tonic === currRoot).length;
   const isImmediateRepeat = prevChord.symbol === candidate.symbol;
+  const isSameRootAsPrev = getChroma(prevRoot) === getChroma(currRoot);
   const isPingPongRepeat =
     twoBackChord &&
     Chord.get(twoBackChord.symbol).tonic === currRoot &&
-    prevChord.harmonicFunction !== "Dominant";
+    prevChord.harmonicFunction !== "Dominant" &&
+    prevChord.harmonicFunction !== "Tritone Sub" &&
+    prevChord.harmonicFunction !== "Secondary Dominant";
 
   if (isImmediateRepeat) {
     return {
       title: "동일 화음 지속 (Harmonic Pedal)",
       reason: "직전 마디와 동일한 화음을 유지합니다.",
-      weight: 22,
+      weight: 20,
     };
   }
 
@@ -751,11 +796,12 @@ function evaluateTransitionTheory(
   if (
     twoBackChord &&
     twoBackChord.roman.startsWith("ii") &&
-    prevChord.harmonicFunction === "Dominant" &&
+    (prevChord.harmonicFunction === "Dominant" ||
+      prevChord.harmonicFunction === "Tritone Sub") &&
     (candidate.roman.startsWith("I") || candidate.roman.startsWith("i"))
   ) {
     weight = 96;
-    title = `투-파이브-원 (ii → V → I) 완결 종지`;
+    title = `투-파이브-원 (ii → V/subV → I) 완결 종지`;
     reason = `${twoBackChord.symbol} → ${prevChord.symbol} 투-파이브 에너지를 ${candidate.symbol} 토닉으로 완벽하게 착지시킵니다.`;
     idiomTag = "ii-V-I Cadence";
   } else if (
@@ -816,7 +862,7 @@ function evaluateTransitionTheory(
     prevChord.category === "secondary_dominant" &&
     rootIntervalSemitones === 5
   ) {
-    weight = 96;
+    weight = 95;
     title = `세컨더리 도미넌트 완전5도 해결 (${prevChord.roman} → ${candidate.roman})`;
     reason = `직전 부속화음(${prevChord.symbol})의 가이드톤 트라이톤이 타깃 화음 ${candidate.symbol}로 해결됩니다.`;
     idiomTag = "Secondary Resolution";
@@ -825,7 +871,7 @@ function evaluateTransitionTheory(
     candidate.category === "tritone_sub" &&
     rootIntervalSemitones === 11
   ) {
-    weight = 94;
+    weight = 93;
     title = `반음 하행 트라이톤 대리 투-파이브 (ii → subV7)`;
     reason = `서브도미넌트(${prevChord.symbol})에서 반음 아래의 ${candidate.symbol}로 진행해 크로매틱 베이스 라인을 만듭니다.`;
     idiomTag = "Chromatic ii-subV-I";
@@ -833,7 +879,7 @@ function evaluateTransitionTheory(
     prevChord.category === "tritone_sub" &&
     rootIntervalSemitones === 11
   ) {
-    weight = 96;
+    weight = 95;
     title = `트라이톤 대리 반음 하행 해결 (${prevChord.roman} → ${candidate.roman})`;
     reason = `트라이톤 대리(${prevChord.symbol})에서 베이스가 반음 하행하여 ${candidate.symbol}로 매끄럽게 착지합니다.`;
     idiomTag = "Tritone Resolution";
@@ -854,20 +900,69 @@ function evaluateTransitionTheory(
     (candidate.category === "modal_interchange" ||
       candidate.category === "secondary_dominant")
   ) {
-    weight = 90;
+    weight = 88;
     title = `3도권 크로매틱 메디언트 (${prevChord.roman} → ${candidate.roman})`;
     reason = `근음이 3도 관계로 이동하며 공통음을 유지한 채 색채음(${candidate.symbol})으로 분위기를 전환합니다.`;
     idiomTag = "Chromatic Mediant";
   } else if (rootIntervalSemitones === 5) {
-    weight = 90;
+    weight = 89;
     title = `5도권 순환 진행 (${prevChord.roman} → ${candidate.roman})`;
     reason = `근음이 완전4도 상행(5도 하행)하는 자연스러운 5도권 화성 연결입니다.`;
     idiomTag = "Circle of 5ths";
   } else if (rootIntervalSemitones === 2 || rootIntervalSemitones === 10) {
-    weight = 86;
+    weight = 87;
     title = `온음 순차 그루브 진행 (${prevChord.roman} → ${candidate.roman})`;
     reason = `네오소울·R&B에서 자주 쓰이는 온음(장2도) 패러렐/순차 이동 진행입니다.`;
     idiomTag = "Neo-Soul Stepwise";
+  }
+
+  // === PHRASE-POSITION ROLE WEIGHTING (마디 위치별 역할 가중치) ===
+  const barPosIn4 = barIndex % 4; // 0=Bar1, 1=Bar2, 2=Bar3, 3=Bar4
+
+  if (barPosIn4 === 1) {
+    // Bar 2 (Expansion / Groove Departure): Favor smooth Subdominants (ii, IV) & diatonic/modal groove over harsh altered secondary dominants
+    if (
+      candidate.harmonicFunction === "Subdominant" ||
+      candidate.roman.startsWith("vi") ||
+      candidate.roman.startsWith("iii")
+    ) {
+      weight += 6;
+    } else if (
+      candidate.category === "secondary_dominant" &&
+      candidate.symbol.includes("#9#5")
+    ) {
+      weight -= 5;
+    }
+  } else if (barPosIn4 === 2) {
+    // Bar 3 (Pre-Cadence / Climax / Color): Favor Secondary Dominants, Modal Interchange, and Subdominant prep
+    if (
+      candidate.category === "secondary_dominant" ||
+      candidate.category === "modal_interchange" ||
+      candidate.category === "tritone_sub"
+    ) {
+      weight += 6;
+    }
+  } else if (barPosIn4 === 3) {
+    // Bar 4 / Bar 8 (Turnaround or Cadence):
+    const prevWasDom =
+      prevChord.harmonicFunction === "Dominant" ||
+      prevChord.harmonicFunction === "Tritone Sub" ||
+      prevChord.roman.startsWith("bVII");
+    if (prevWasDom && candidate.harmonicFunction === "Tonic") {
+      weight += 8;
+    } else if (
+      !prevWasDom &&
+      (candidate.harmonicFunction === "Dominant" ||
+        candidate.category === "tritone_sub" ||
+        candidate.roman.startsWith("bVII"))
+    ) {
+      weight += 8;
+    }
+  }
+
+  // Discourage staying on the exact same root (e.g., Cmaj9 -> C7#9#5) unless it's a deliberate V7/IV prep on Bar 2/3
+  if (isSameRootAsPrev && candidate.category !== "secondary_dominant") {
+    weight -= 15;
   }
 
   reason += corpusNote;
@@ -879,16 +974,6 @@ function evaluateTransitionTheory(
     weight -= 12;
   }
 
-  if ((barIndex + 1) % 4 === 0) {
-    if (
-      candidate.harmonicFunction === "Dominant" ||
-      candidate.harmonicFunction === "Tonic" ||
-      candidate.category === "tritone_sub"
-    ) {
-      weight += 4;
-    }
-  }
-
   weight = Math.max(
     20,
     Math.min(
@@ -897,11 +982,17 @@ function evaluateTransitionTheory(
     )
   );
 
-  return { title, reason, weight, idiomTag: idiomTag || (candidate.corpusCount >= 3 ? "Neo-Soul Corpus" : undefined) };
+  return {
+    title,
+    reason,
+    weight,
+    idiomTag:
+      idiomTag || (candidate.corpusCount >= 3 ? "Neo-Soul Corpus" : undefined),
+  };
 }
 
 /**
- * Retrieve empirical Neo-Soul corpus transitions for the current state (Methods 1 & 2)
+ * Retrieve empirical Neo-Soul corpus transitions using strict (relPc + QualityFamily) matching
  */
 function lookupCorpusEntries(
   keyTonic: string,
@@ -914,35 +1005,22 @@ function lookupCorpusEntries(
   if (progression.length === 0) {
     const list = neoSoulCorpus.openings[keyMode] || [];
     for (const item of list) {
-      resultMap.set(`${item.relPc}:${item.qual}`, item);
+      const fam = item.family || getQualityFamily(item.qual);
+      resultMap.set(`${item.relPc}:${fam}`, item);
     }
     return resultMap;
   }
 
   const prevStep = progression[progression.length - 1];
   const prevRoot = Chord.get(prevStep.symbol).tonic || keyTonic;
+  const prevSuffix = prevStep.symbol.slice(prevRoot.length);
+  const prevFamily = getQualityFamily(prevSuffix);
   const prevRelPc = ((getChroma(prevRoot) - keyPc) % 12 + 12) % 12;
 
-  // 1) Check 3-gram first if >= 2 bars
-  if (progression.length >= 2) {
-    const twoBack = progression[progression.length - 2];
-    const twoBackRoot = Chord.get(twoBack.symbol).tonic || keyTonic;
-    const twoBackRelPc = ((getChroma(twoBackRoot) - keyPc) % 12 + 12) % 12;
-    const key3 = `${twoBackRelPc}->${prevRelPc}`;
-    const list3 = neoSoulCorpus.transitions3Gram[keyMode]?.[key3] || [];
-    for (const item of list3) {
-      resultMap.set(`${item.relPc}:${item.qual}`, {
-        ...item,
-        count: item.count * 2, // Boost 3-gram exact context matches
-      });
-    }
-  }
-
-  // 2) Merge 2-gram matches
-  const list2 = neoSoulCorpus.transitions2Gram[keyMode]?.[String(prevRelPc)] || [];
-  for (const item of list2) {
-    const k = `${item.relPc}:${item.qual}`;
-    const existing = resultMap.get(k);
+  const mergeEntry = (item: CorpusEntry, boost = 1) => {
+    const fam = item.family || getQualityFamily(item.qual);
+    const key = `${item.relPc}:${fam}`;
+    const existing = resultMap.get(key);
     if (existing) {
       const mergedSongs = [...existing.songs];
       for (const s of item.songs) {
@@ -950,23 +1028,47 @@ function lookupCorpusEntries(
           mergedSongs.push(s);
         }
       }
-      resultMap.set(k, {
+      resultMap.set(key, {
         relPc: item.relPc,
-        qual: item.qual,
-        count: existing.count + item.count,
+        qual: existing.count >= item.count ? existing.qual : item.qual,
+        family: fam,
+        count: existing.count + item.count * boost,
         songs: mergedSongs,
       });
     } else {
-      resultMap.set(k, item);
+      resultMap.set(key, {
+        ...item,
+        family: fam,
+        count: item.count * boost,
+      });
     }
+  };
+
+  // 1) 3-gram context match
+  if (progression.length >= 2) {
+    const twoBack = progression[progression.length - 2];
+    const twoBackRoot = Chord.get(twoBack.symbol).tonic || keyTonic;
+    const twoBackRelPc = ((getChroma(twoBackRoot) - keyPc) % 12 + 12) % 12;
+    const key3 = `${twoBackRelPc}->${prevRelPc}`;
+    const list3 = neoSoulCorpus.transitions3Gram[keyMode]?.[key3] || [];
+    for (const item of list3) {
+      mergeEntry(item, 2);
+    }
+  }
+
+  // 2) Strict 2-gram match by (prevRelPc:prevFamily)
+  const familyKey = `${prevRelPc}:${prevFamily}`;
+  const list2Fam =
+    neoSoulCorpus.transitions2GramByFamily?.[keyMode]?.[familyKey] ||
+    neoSoulCorpus.transitions2Gram[keyMode]?.[String(prevRelPc)] ||
+    [];
+  for (const item of list2Fam) {
+    mergeEntry(item, 1);
   }
 
   return resultMap;
 }
 
-/**
- * Classify a corpus-injected chord's category & function
- */
 function classifyCorpusChord(
   relPc: number,
   qual: string,
@@ -983,15 +1085,10 @@ function classifyCorpusChord(
     keyMode === "major"
       ? ROMAN_PREFIX_MAJOR[relPc] || "I"
       : ROMAN_PREFIX_MINOR[relPc] || "i";
-  const roman = `${prefix}${qual.replace(/^m/, "")}`;
+  const roman = `${prefix}${qual.replace(/^m(?!aj)/, "")}`;
+  const fam = getQualityFamily(qual);
 
-  const isDom =
-    qual.startsWith("7") ||
-    qual === "9" ||
-    qual === "13" ||
-    qual.includes("sus4");
-
-  if (relPc === 1 && isDom) {
+  if (relPc === 1 && (fam === "DOM" || fam === "SUS")) {
     return {
       category: "tritone_sub",
       categoryLabel: "트라이톤 대리 (코퍼스)",
@@ -1005,7 +1102,7 @@ function classifyCorpusChord(
   const diatonicRelPcs =
     keyMode === "major" ? [0, 2, 4, 5, 7, 9, 11] : [0, 2, 3, 5, 7, 8, 10];
   if (!diatonicRelPcs.includes(relPc)) {
-    if (isDom) {
+    if (fam === "DOM") {
       return {
         category: "tritone_sub",
         categoryLabel: "대리/크로매틱 도미넌트",
@@ -1025,13 +1122,7 @@ function classifyCorpusChord(
     };
   }
 
-  // Diatonic root but altered/secondary dominant quality
-  if (
-    keyMode === "major" &&
-    isDom &&
-    relPc !== 7 &&
-    !qual.includes("sus4")
-  ) {
+  if (keyMode === "major" && fam === "DOM" && relPc !== 7) {
     return {
       category: "secondary_dominant",
       categoryLabel: "세컨더리 도미넌트 (코퍼스)",
@@ -1042,12 +1133,7 @@ function classifyCorpusChord(
     };
   }
 
-  if (
-    keyMode === "major" &&
-    relPc === 5 &&
-    qual.startsWith("m") &&
-    !qual.startsWith("maj")
-  ) {
+  if (keyMode === "major" && relPc === 5 && fam === "MIN") {
     return {
       category: "modal_interchange",
       categoryLabel: "모달 인터체인지 (코퍼스)",
@@ -1059,7 +1145,10 @@ function classifyCorpusChord(
   }
 
   const func: HarmonicFunction =
-    relPc === 0 || relPc === 4 || relPc === 9 || (keyMode === "minor" && relPc === 3)
+    relPc === 0 ||
+    relPc === 4 ||
+    relPc === 9 ||
+    (keyMode === "minor" && relPc === 3)
       ? "Tonic"
       : relPc === 7 || relPc === 11
         ? "Dominant"
@@ -1077,6 +1166,7 @@ function classifyCorpusChord(
 
 /**
  * Generate all legal/musical next chord candidates in the given key using Tonal.js + Neo-Soul Corpus RAG
+ * Deduplicates by (relPc + QualityFamily) so identical-function tension variants don't cannibalize probabilities!
  */
 export function generateChordCandidates(params: {
   keyTonic: string;
@@ -1100,7 +1190,6 @@ export function generateChordCandidates(params: {
   const nextBarIndex = progression.length;
   const keyPc = getChroma(keyTonic);
 
-  // Retrieve empirical corpus matches for the current state (Method 1)
   const corpusMap = lookupCorpusEntries(keyTonic, keyMode, progression);
 
   const rawList: Array<{
@@ -1197,7 +1286,7 @@ export function generateChordCandidates(params: {
         const suffix = primarySym.slice(root.length);
         rawList.push({
           symbol: primarySym,
-          roman: `${spec.baseRoman}${suffix.replace(/^m/, "")}`,
+          roman: `${spec.baseRoman}${suffix.replace(/^m(?!aj)/, "")}`,
           category: "diatonic",
           categoryLabel: "다이아토닉",
           harmonicFunction: spec.func,
@@ -1277,7 +1366,7 @@ export function generateChordCandidates(params: {
       rawList.push(
         {
           symbol: ivSym,
-          roman: `iv${ivSym.slice(ivRoot.length).replace(/^m/, "")}`,
+          roman: `iv${ivSym.slice(ivRoot.length).replace(/^m(?!aj)/, "")}`,
           category: "modal_interchange",
           categoryLabel: "모달 인터체인지",
           harmonicFunction: "Modal Interchange",
@@ -1520,7 +1609,7 @@ export function generateChordCandidates(params: {
     }
   }
 
-  // Method 2: Inject top verified Neo-Soul Corpus chords directly into the candidate pool!
+  // Inject top Neo-Soul Corpus chords (only if their (relPc:family) is not already represented!)
   const sortedCorpusEntries = Array.from(corpusMap.values())
     .sort((a, b) => b.count - a.count)
     .slice(0, 6);
@@ -1544,49 +1633,34 @@ export function generateChordCandidates(params: {
     });
   }
 
-  const seenSymbols = new Set<string>();
+  // Deduplicate by `(relPc:family)` so Cmaj7, Cmaj9, Cmaj13 don't split the Tonic probability into 3 pieces!
+  const seenFamilyByDegree = new Set<string>();
   const candidates: ChordCandidate[] = [];
 
   rawList.forEach((item, idx) => {
-    if (!item.symbol || seenSymbols.has(item.symbol)) return;
-    seenSymbols.add(item.symbol);
+    if (!item.symbol) return;
 
-    const voiceLeading = buildSmoothVoicing(item.symbol, prevVoicing);
     const chordObj = Chord.get(item.symbol);
     const m = item.symbol.match(/^([A-G][b#]?)/);
     const root = normalizeNote(chordObj.tonic || (m ? m[1] : "C"));
+    const suffix = item.symbol.slice(root.length);
+    const family = getQualityFamily(suffix);
+    const relPc = ((getChroma(root) - keyPc) % 12 + 12) % 12;
+
+    const degreeFamilyKey = `${relPc}:${family}`;
+    if (seenFamilyByDegree.has(degreeFamilyKey)) {
+      return;
+    }
+    seenFamilyByDegree.add(degreeFamilyKey);
+
+    const voiceLeading = buildSmoothVoicing(item.symbol, prevVoicing);
     const notes =
       chordObj.notes.length >= 3
         ? chordObj.notes.map(normalizeNote)
         : voiceLeading.voicingNotes.slice(1).map((n) => Note.pitchClass(n));
 
-    const relPc = ((getChroma(root) - keyPc) % 12 + 12) % 12;
-    const suffix = item.symbol.slice(root.length);
-
-    // Match corpus entry (exact relPc:qual or same relPc & quality family)
-    let matchedCorpus = corpusMap.get(`${relPc}:${suffix}`);
-    if (!matchedCorpus) {
-      for (const entry of corpusMap.values()) {
-        if (entry.relPc === relPc) {
-          const bothMinor =
-            suffix.startsWith("m") &&
-            !suffix.startsWith("maj") &&
-            entry.qual.startsWith("m") &&
-            !entry.qual.startsWith("maj");
-          const bothMaj =
-            (suffix.startsWith("maj") || suffix === "add9" || suffix === "69") &&
-            (entry.qual.startsWith("maj") || entry.qual === "add9" || entry.qual === "69");
-          const bothDom =
-            (suffix.includes("7") || suffix.includes("9") || suffix.includes("13")) &&
-            (entry.qual.includes("7") || entry.qual.includes("9") || entry.qual.includes("13"));
-          if (bothMinor || bothMaj || bothDom) {
-            matchedCorpus = entry;
-            break;
-          }
-        }
-      }
-    }
-
+    // Strict corpus match by `(relPc:family)`!
+    const matchedCorpus = corpusMap.get(degreeFamilyKey);
     const corpusCount = matchedCorpus?.count ?? 0;
     const corpusSongs = matchedCorpus?.songs ?? [];
 
@@ -1596,6 +1670,7 @@ export function generateChordCandidates(params: {
         symbol: item.symbol,
         roman: item.roman,
         root,
+        family,
         category: item.category,
         harmonicFunction: item.harmonicFunction,
         functionKorean: item.functionKorean,
@@ -1622,6 +1697,7 @@ export function generateChordCandidates(params: {
       roman: item.roman,
       root,
       quality: chordObj.quality || suffix || "major",
+      family,
       notes,
       category: item.category,
       categoryLabel: item.categoryLabel,
@@ -1640,7 +1716,9 @@ export function generateChordCandidates(params: {
     });
   });
 
-  return candidates.sort((a, b) => b.baseTheoryWeight - a.baseTheoryWeight).slice(0, 16);
+  return candidates
+    .sort((a, b) => b.baseTheoryWeight - a.baseTheoryWeight)
+    .slice(0, 15);
 }
 
 export function createStepFromCandidate(

@@ -423,9 +423,23 @@ export const HarmonyRadar: React.FC<HarmonyRadarProps> = ({
                 {activeCand.categoryLabel}
               </span>
               <span className="text-xs font-mono font-bold text-indigo-300">
-                Jev 확률: {((activeCand.jevProbability ?? 0) * 100).toFixed(1)}%
+                앙상블 확률: {((activeCand.jevProbability ?? 0) * 100).toFixed(1)}%
               </span>
             </div>
+
+            {activeCand.rawJevProb !== undefined && (
+              <div className="flex items-center justify-between text-[10px] font-mono bg-slate-900/80 border border-slate-800/80 rounded-md px-2 py-1 text-slate-300">
+                <span className="text-indigo-300">
+                  Jev(50%): {(activeCand.rawJevProb * 100).toFixed(0)}%
+                </span>
+                <span className="text-emerald-300">
+                  이론(30%): {((activeCand.theoryProb ?? 0) * 100).toFixed(0)}%
+                </span>
+                <span className="text-purple-300">
+                  코퍼스(20%): {((activeCand.corpusProb ?? 0) * 100).toFixed(0)}%
+                </span>
+              </div>
+            )}
 
             {/* Chord Symbol & Roman & Emotion */}
             <div className="flex items-baseline justify-between border-b border-slate-800 pb-2">

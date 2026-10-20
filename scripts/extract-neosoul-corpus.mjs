@@ -19,14 +19,20 @@ const NOTE_TO_PC = {
   B: 11, Cb: 11,
 };
 
-/**
- * Clean OCR chord quality into a valid Tonal.js suffix
- */
+function getQualityFamily(qual) {
+  if (!qual) return "MAJ";
+  if (qual.includes("sus")) return "SUS";
+  if (qual.includes("dim") || qual.includes("m7b5") || qual.includes("ø")) return "DIM";
+  if (qual.startsWith("maj") || qual === "add9" || qual === "69" || qual === "6") return "MAJ";
+  if (qual.startsWith("m")) return "MIN";
+  if (qual.startsWith("7") || qual === "9" || qual === "13") return "DOM";
+  return "MAJ";
+}
+
 function normalizeQuality(rawQual) {
   if (!rawQual) return "";
   const q = String(rawQual).trim();
 
-  // Discard obvious OCR noise
   if (
     q.includes("N.C.") ||
     q.includes("Perfect") ||
@@ -87,7 +93,8 @@ function parseKeyString(keyStr, fallbackPc) {
 const lines = fs.readFileSync(INPUT_PATH, "utf8").split(/\r?\n/).filter(Boolean);
 
 const openingCounts = { major: new Map(), minor: new Map() };
-const transitions2Gram = { major: new Map(), minor: new Map() };
+const transitions2GramByFamily = { major: new Map(), minor: new Map() };
+const transitions2GramByPc = { major: new Map(), minor: new Map() };
 const transitions3Gram = { major: new Map(), minor: new Map() };
 
 let validSongsCount = 0;
@@ -118,7 +125,6 @@ for (const line of lines) {
   }
   if (row.status !== "ok" || !Array.isArray(row.progression)) continue;
 
-  // Filter chords with duration >= 0.5s and valid normalized quality
   const cleanedSteps = [];
   for (const step of row.progression) {
     if ((step.dur ?? 0) < 0.5) continue;
@@ -131,7 +137,12 @@ for (const line of lines) {
       prev.dur += step.dur;
       continue;
     }
-    cleanedSteps.push({ pc: step.pc, qual, dur: step.dur });
+    cleanedSteps.push({
+      pc: step.pc,
+      qual,
+      family: getQualityFamily(qual),
+      dur: step.dur,
+    });
   }
 
   if (cleanedSteps.length < 3) continue;
@@ -148,34 +159,50 @@ for (const line of lines) {
     return {
       relPc,
       qual: s.qual,
+      family: s.family,
       token: `${relPc}:${s.qual}`,
     };
   });
 
-  // Record opening chord
+  // Record opening chord (grouped by relPc:family so maj7/maj9/maj13 combine their opening evidence!)
   const first = relSteps[0];
-  if (!openingCounts[mode].has(first.token)) {
-    openingCounts[mode].set(first.token, {
+  const openFamilyKey = `${first.relPc}:${first.family}`;
+  if (!openingCounts[mode].has(openFamilyKey)) {
+    openingCounts[mode].set(openFamilyKey, {
       token: first.token,
       relPc: first.relPc,
       qual: first.qual,
+      family: first.family,
       count: 0,
       songs: [],
     });
   }
-  const openEntry = openingCounts[mode].get(first.token);
+  const openEntry = openingCounts[mode].get(openFamilyKey);
   openEntry.count++;
-  if (openEntry.songs.length < 4 && !openEntry.songs.some((s) => s.id === songMeta.id)) {
+  if (
+    openEntry.songs.length < 4 &&
+    !openEntry.songs.some((s) => s.id === songMeta.id)
+  ) {
     openEntry.songs.push(songMeta);
   }
 
-  // Record 2-gram (by prev relPc) and 3-gram (by twoBackRelPc->prevRelPc)
   for (let i = 1; i < relSteps.length; i++) {
     const prev = relSteps[i - 1];
     const curr = relSteps[i];
-    if (prev.relPc === curr.relPc && prev.qual === curr.qual) continue;
+    if (prev.relPc === curr.relPc && prev.family === curr.family) continue;
 
-    recordMapItem(transitions2Gram[mode], String(prev.relPc), curr.token, songMeta);
+    recordMapItem(
+      transitions2GramByFamily[mode],
+      `${prev.relPc}:${prev.family}`,
+      curr.token,
+      songMeta
+    );
+    recordMapItem(
+      transitions2GramByPc[mode],
+      String(prev.relPc),
+      curr.token,
+      songMeta
+    );
     totalTransitions++;
 
     if (i >= 2) {
@@ -198,6 +225,7 @@ function serializeTransitionMap(map, topN = 8, minCount = 2) {
         return {
           relPc: Number(relPcStr),
           qual,
+          family: getQualityFamily(qual),
           count: x.count,
           songs: x.songs,
         };
@@ -225,9 +253,13 @@ const outputData = {
     major: serializeOpenings(openingCounts.major, 12),
     minor: serializeOpenings(openingCounts.minor, 12),
   },
+  transitions2GramByFamily: {
+    major: serializeTransitionMap(transitions2GramByFamily.major, 8, 2),
+    minor: serializeTransitionMap(transitions2GramByFamily.minor, 8, 2),
+  },
   transitions2Gram: {
-    major: serializeTransitionMap(transitions2Gram.major, 8, 2),
-    minor: serializeTransitionMap(transitions2Gram.minor, 8, 2),
+    major: serializeTransitionMap(transitions2GramByPc.major, 8, 2),
+    minor: serializeTransitionMap(transitions2GramByPc.minor, 8, 2),
   },
   transitions3Gram: {
     major: serializeTransitionMap(transitions3Gram.major, 5, 2),
@@ -237,5 +269,5 @@ const outputData = {
 
 fs.writeFileSync(OUTPUT_PATH, JSON.stringify(outputData, null, 2), "utf8");
 console.log(
-  `Successfully extracted Neo-Soul Corpus: ${validSongsCount} songs, ${totalTransitions} transitions -> ${OUTPUT_PATH}`
+  `Re-indexed Neo-Soul Corpus with strict Quality Families: ${validSongsCount} songs, ${totalTransitions} transitions`
 );
